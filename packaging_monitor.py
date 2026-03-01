@@ -16,7 +16,7 @@ import json
 import re
 from dataclasses import dataclass, field
 from typing import Optional
-from urllib.parse import urljoin
+from urllib.parse import urljoin, quote_plus
 
 # ─── Konfigurasjon ───────────────────────────────────────────────────────────
 
@@ -74,6 +74,12 @@ SOURCES = {
         "access": "åpen",
         "description": "Konsortium for fleksibel emballasje og sirkulærøkonomi",
         "url": "https://ceflex.eu",
+    },
+    "LinkedIn (via Google)": {
+        "type": "Sosialt/Fagnettverk",
+        "access": "delvis åpen",
+        "description": "Offentlige LinkedIn-innlegg og artikler funnet via Google-indeksering",
+        "url": "https://www.linkedin.com",
     },
 }
 
@@ -462,9 +468,88 @@ def scan_ceflex():
     return deduplicate(articles)
 
 
-# ─── Innholdshenting med tilgangsstatus ──────────────────────────────────────
+def scan_linkedin_via_google():
+    """Scanner offentlige LinkedIn-innlegg via Google-søk."""
+    print("\n💼 LinkedIn (via Google)...")
+    articles = []
 
-def fetch_article_content(article):
+    # Ulike søk for å fange bredden
+    searches = [
+        "site:linkedin.com PPWR packaging regulation",
+        "site:linkedin.com packaging waste regulation EU",
+        "site:linkedin.com SUP directive single use plastic packaging",
+        "site:linkedin.com emballasje PPWR forordning",
+        "site:linkedin.com fresh produce packaging sustainability",
+        "site:linkedin.com FMCG packaging circular economy",
+        "site:linkedin.com fruit vegetable packaging regulation",
+        "site:linkedin.com flower packaging sustainable",
+        "site:linkedin.com beverage packaging recycled content",
+    ]
+
+    for query in searches:
+        encoded = quote_plus(query)
+        url = f"https://www.google.com/search?q={encoded}&num=10&tbs=qdr:m"  # siste måned
+        resp = safe_request(url, timeout=12)
+        if not resp:
+            continue
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Google-resultater
+        for result in soup.select("div.g, div[data-sokoban-container]"):
+            link = result.find("a", href=True)
+            if not link:
+                continue
+            href = link["href"]
+
+            # Filtrer kun LinkedIn-lenker
+            if "linkedin.com" not in href:
+                continue
+            # Rens Google-redirect-URLer
+            if href.startswith("/url?"):
+                import urllib.parse as up
+                parsed = up.parse_qs(up.urlparse(href).query)
+                href = parsed.get("q", [href])[0]
+
+            if "linkedin.com" not in href:
+                continue
+
+            # Hent tittel
+            title_tag = result.find("h3")
+            title = title_tag.get_text(strip=True) if title_tag else link.get_text(strip=True)
+            if len(title) < 15:
+                continue
+
+            # Hent snippet
+            snippet_tag = result.select_one("div.VwiC3b, span.aCOpRe, div[data-sncf]")
+            snippet = snippet_tag.get_text(strip=True) if snippet_tag else ""
+
+            combined_text = title + " " + snippet
+
+            # Bestem type LinkedIn-innhold
+            is_article = "/pulse/" in href
+            is_post = "/posts/" in href or "/feed/" in href
+            content_type = "artikkel" if is_article else "innlegg" if is_post else "profil/side"
+
+            # Hopp over rene profil-/bedriftssider uten innhold
+            if not is_article and not is_post and "/company/" not in href:
+                continue
+
+            art = make_article(
+                title, href, "LinkedIn (via Google)",
+                extra_text=combined_text,
+                summary=snippet[:500] if snippet else "",
+                force=True,
+                default_kw=["packaging regulation"],
+            )
+            if art:
+                articles.append(art)
+
+        time.sleep(2)  # Respekter Google rate limits
+
+    articles = deduplicate(articles)
+    print(f"  ✓ {len(articles)}")
+    return articles
     """Henter artikkelinnhold og sjekker faktisk tilgjengelighet."""
     resp = safe_request(article.url, timeout=10)
     if not resp:
@@ -982,7 +1067,7 @@ def main():
         scan_eurlex, scan_eu_environment, scan_freshplaza,
         scan_packaging_europe, scan_packaging_world,
         scan_regjeringen, scan_miljodirektoratet,
-        scan_europen, scan_ceflex,
+        scan_europen, scan_ceflex, scan_linkedin_via_google,
     ]
 
     for scanner in scanners:
