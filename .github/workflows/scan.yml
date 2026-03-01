@@ -1,0 +1,43 @@
+name: 📦 Daglig Emballasje-skanning
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scan-and-publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 📦 Installer avhengigheter
+        run: pip install -r requirements.txt
+
+      - name: 🔍 Kjør skanning med AI-analyse
+        run: python packaging_monitor.py
+        env:
+          OUTPUT_DIR: docs
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: 📝 Commit rapport
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "📦 Rapport $(TZ='Europe/Oslo' date +'%d.%m.%Y %H:%M')"
+          git push
