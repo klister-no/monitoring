@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📦 Emballasjeregulering Monitor – 01.03.2026 10:23</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+:root{--bg:#f4f1eb;--card:#fff;--text:#1a1a2e;--muted:#6c757d;--green:#22763d;--green-lt:#d8f3dc;--border:#dee2e6;--ai-bg:#eef2ff;--ai-border:#818cf8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:1100px;margin:0 auto;padding:1.5rem}
+
+header{background:linear-gradient(135deg,#0a1628 0%,#1a2742 40%,#2d4a3e 100%);color:#fff;padding:3rem 2rem;position:relative}
+header h1{font-family:'Playfair Display',serif;font-size:2.4rem;margin-bottom:.3rem}
+header .sub{opacity:.75;font-size:1rem;margin-bottom:.3rem}
+header .ts{opacity:.45;font-size:.85rem}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.8rem;margin:1.5rem 0;padding:1.25rem;background:var(--card);border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.stat{text-align:center;padding:.4rem}
+.stat .n{font-size:1.8rem;font-weight:700;color:var(--green)}
+.stat .l{font-size:.78rem;color:var(--muted);margin-top:.1rem}
+
+/* Kildetabell */
+.sources-section{margin:2rem 0}
+.sources-section h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:1rem}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+th{background:#1a2742;color:#fff;padding:.7rem 1rem;text-align:left;font-size:.85rem;font-weight:600}
+td{padding:.6rem 1rem;border-bottom:1px solid var(--border);font-size:.88rem}
+td.count{text-align:center;font-weight:700;color:var(--green)}
+tr:last-child td{border-bottom:none}
+tr:hover{background:#f8f9fa}
+
+/* Tilgangsbadges */
+.access-badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.72rem;font-weight:600}
+.access-badge.åpen{background:#d4edda;color:#155724}
+.access-badge.delvis-åpen{background:#fff3cd;color:#856404}
+.access-badge.delvis-lukket{background:#fde2d8;color:#a84200}
+.access-badge.lukket{background:#f8d7da;color:#721c24}
+
+/* Daglig sammendrag */
+.daily-summary{margin:2rem 0;padding:1.5rem;background:linear-gradient(135deg,#eef2ff,#f0ebff);border-radius:12px;border-left:4px solid var(--ai-border)}
+.daily-summary h2{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:.8rem;color:#4338ca}
+.summary-box{font-size:.95rem;line-height:1.7;color:#333}
+
+/* Artikkelkort */
+.sec{margin-bottom:2.5rem}
+.sec h2{font-family:'Playfair Display',serif;font-size:1.4rem;padding-bottom:.5rem;border-bottom:2px solid var(--green);margin-bottom:1rem}
+.cnt{font-weight:400;color:var(--muted);font-size:.95rem}
+.desc,.empty{color:var(--muted);margin-bottom:1rem;font-size:.92rem}
+
+.card{background:var(--card);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:.85rem;box-shadow:0 1px 4px rgba(0,0,0,.04);border-left:4px solid var(--border);transition:transform .15s}
+.card:hover{transform:translateX(3px)}
+.card-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;flex-wrap:wrap}
+.score{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.82rem;flex-shrink:0}
+.meta{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap}
+.src-badge{padding:2px 9px;border-radius:20px;font-size:.72rem;font-weight:600;color:#fff}
+.src-badge.eu-regulering{background:#003399}
+.src-badge.fagmedia{background:#d35400}
+.src-badge.lovdata-norge{background:#6c3483}
+.src-badge.bransjeorganisasjon{background:#2c3e50}
+.date{font-size:.78rem;color:var(--muted)}
+h3{font-size:1.05rem;margin-bottom:.4rem}
+h3 a{color:var(--text);text-decoration:none}
+h3 a:hover{color:var(--green);text-decoration:underline}
+.summary{color:var(--muted);font-size:.88rem;margin-bottom:.6rem}
+
+.ai-block{background:var(--ai-bg);border-left:3px solid var(--ai-border);border-radius:6px;padding:.7rem 1rem;margin-bottom:.6rem;font-size:.88rem}
+.ai-block.impact{background:#fef9e7;border-left-color:#f1c40f}
+.ai-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ai-border);display:block;margin-bottom:.25rem}
+.ai-block.impact .ai-label{color:#b7950b}
+.ai-block p{margin:0;line-height:1.5}
+
+.impact-basic{background:#fef9e7;border-left:3px solid #f1c40f;border-radius:6px;padding:.6rem .9rem;font-size:.86rem;margin-bottom:.6rem}
+
+.tags{display:flex;gap:.35rem;flex-wrap:wrap}
+.cat-tag{background:var(--green-lt);color:var(--green);padding:2px 7px;border-radius:4px;font-size:.72rem;font-weight:500}
+.kw-tag{background:#eef;color:#555;padding:2px 7px;border-radius:4px;font-size:.7rem}
+
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.82rem}
+footer a{color:var(--green)}
+@media(max-width:768px){
+    .wrap{padding:1rem}header{padding:2rem 1rem}header h1{font-size:1.6rem}
+    .stats{grid-template-columns:repeat(3,1fr)}
+    table{font-size:.8rem}th,td{padding:.4rem .5rem}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>📦 Emballasjeregulering Monitor</h1>
+<p class="sub">PPWR · SUP-direktivet · Emballasjelovgivning · Frukt & Grønt · Drikke · Blomster</p>
+<p class="ts">Sist skannet: 01.03.2026 10:23 · Neste skanning: i morgen kl 06:00</p>
+</div></header>
+
+<div class="wrap">
+
+<div class="stats">
+<div class="stat"><div class="n">159</div><div class="l">Totalt funnet</div></div>
+<div class="stat"><div class="n">159</div><div class="l">Tilgjengelige</div></div>
+<div class="stat"><div class="n">0</div><div class="l">Bak betalingsmur</div></div>
+<div class="stat"><div class="n">3</div><div class="l">Høy relevans</div></div>
+<div class="stat"><div class="n">23</div><div class="l">Medium</div></div>
+<div class="stat"><div class="n">18</div><div class="l">EU/Regulering</div></div>
+<div class="stat"><div class="n">0</div><div class="l">Fagmedia</div></div>
+<div class="stat"><div class="n">17</div><div class="l">Norske kilder</div></div>
+</div>
+
+
+<section class="daily-summary">
+<h2>🤖 AI Daglig Sammendrag</h2>
+<div class="summary-box">**Daglig sammendrag - EU emballasjeregulering**
+
+Dagens scan viser at den nye EU Packaging and Packaging Waste Regulation (PPWR) 2025/40 dominerer samtlige kilder, med vedtak 19. desember 2024. Den nye forordningen erstatter det tidligere direktivet 94/62/EC og introduserer betydelig skjerpede krav til emballasje og emballasjeavfall. Bransjeorganisasjoner som EUROPEN og CEFLEX stiller kritiske spørsmål ved om de nye målene er oppnåelige innenfor tidsrammene.
+
+**Umiddelbar oppmerksjonhet kreves** for å kartlegge hvordan de nye kravene påvirker våre produkter til frukt/grønt, drikke og blomstermarkedet, spesielt med tanke på resirkulerbarhet og bærekraftsmål.
+
+**Anbefaling:** Bedriften bør umiddelbart sette ned en arbeidsgruppe for å analysere PPWR 2025/40 i detalj, identifisere compliance-gap i dagens produktportefølje, og utvikle en handlingsplan for å møte de nye kravene før de trer i kraft.</div>
+</section>
+
+<section class="sources-section">
+<h2>📡 Kilder og tilgangsstatus</h2>
+<table>
+<thead><tr><th>Kilde</th><th>Type</th><th>Tilgang</th><th>Beskrivelse</th><th>Funn</th></tr></thead>
+<tbody><tr>
+<td><strong>EUR-Lex</strong></td>
+<td>EU/Regulering</td>
+<td><span class="access-badge åpen">åpen</span></td>
+<td>EUs offisielle lovdatabase – alle dokumenter fritt tilgjengelig</td>
+<td class="count">4</td>
+</tr><tr>
+<td><strong>EU Environment</strong></td>
+<td>EU/Regulering</td>
+<td><span class="access-badge åpen">åpen</span></td>
+<td>EU-kommisjonens miljøavdeling – fritt tilgjengelig</td>
+<td class="count">14</td>
+</tr><tr>
+<td><strong>FreshPlaza</strong></td>
+<td>Fagmedia</td>
+<td><span class="access-badge delvis-åpen">delvis åpen</span></td>
+<td>Fagmedie for frukt og grønt – noen artikler krever registrering</td>
+<td class="count">0</td>
+</tr><tr>
+<td><strong>Packaging Europe</strong></td>
+<td>Fagmedia</td>
+<td><span class="access-badge delvis-lukket">delvis lukket</span></td>
+<td>Europeisk emballasjefagblad – mye innhold bak betalingsmur</td>
+<td class="count">0</td>
+</tr><tr>
+<td><strong>Packaging World</strong></td>
+<td>Fagmedia</td>
+<td><span class="access-badge delvis-åpen">delvis åpen</span></td>
+<td>Globalt emballasjemagasin – de fleste artikler er åpne</td>
+<td class="count">0</td>
+</tr><tr>
+<td><strong>Regjeringen.no</strong></td>
+<td>Lovdata/Norge</td>
+<td><span class="access-badge åpen">åpen</span></td>
+<td>Norske høringer, forskrifter og politiske dokumenter – fritt tilgjengelig</td>
+<td class="count">17</td>
+</tr><tr>
+<td><strong>Miljødirektoratet</strong></td>
+<td>Lovdata/Norge</td>
+<td><span class="access-badge åpen">åpen</span></td>
+<td>Norsk miljømyndighet – all informasjon fritt tilgjengelig</td>
+<td class="count">0</td>
+</tr><tr>
+<td><strong>EUROPEN</strong></td>
+<td>Bransjeorganisasjon</td>
+<td><span class="access-badge delvis-åpen">delvis åpen</span></td>
+<td>European Organisation for Packaging – pressemeldinger åpne, rapporter for medlemmer</td>
+<td class="count">108</td>
+</tr><tr>
+<td><strong>CEFLEX</strong></td>
+<td>Bransjeorganisasjon</td>
+<td><span class="access-badge åpen">åpen</span></td>
+<td>Konsortium for fleksibel emballasje og sirkulærøkonomi</td>
+<td class="count">16</td>
+</tr><tr>
+<td><strong>LinkedIn (via Google)</strong></td>
+<td>Sosialt/Fagnettverk</td>
+<td><span class="access-badge delvis-åpen">delvis åpen</span></td>
+<td>Offentlige LinkedIn-innlegg og artikler funnet via Google-indeksering</td>
+<td class="count">0</td>
+</tr></tbody>
+</table>
+</section>
+
+<section class="sec"><h2>🔴 Høy relevans <span class="cnt">(3)</span></h2><p class=desc>Direkte relevant for emballasje innen frukt/grønt, drikke og blomster.</p><div class="card">
+<div class="card-top">
+<div class="score" style="background:#22763d">60</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202500040&pk_campaign=todays_OJ&pk_source=EUR-Lex&pk_medium=X&pk_content=Environment&pk_keyword=Regulation" target="_blank" rel="noopener">Packaging and Packaging Waste Regulation 2025/40 (PPWR)</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#22763d">60</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-and-packaging-waste-regulation-ppwr-whats-on-the-horizon/" target="_blank" rel="noopener">Packaging and Packaging Waste Regulation (PPWR): What’s on the horizon?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#22763d">60</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/will-we-hit-the-packaging-and-packaging-waste-regulation-ppwr-targets/" target="_blank" rel="noopener">Will we hit the Packaging and Packaging Waste Regulation (PPWR) targets?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div></section>
+<section class="sec"><h2>🟡 Medium relevans <span class="cnt">(23)</span></h2><p class=desc>Emballasjeregulering med indirekte relevans.</p><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EUR-Lex</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu" target="_blank" rel="noopener">Ascending</a></h3>
+<p class="summary">Please select at least one item to export You must select an element! Results 1 - 10 of 16052 Sort by Document title Document identifier Document date Relevance Ascending Descending Descending Ascending Descending Jump to page 2 Clear selection Customise shown information Export Export selection Exp...</p>
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Nye merkekrav. PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EUR-Lex</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:31994L0062&qid=1772360560665&rid=1" target="_blank" rel="noopener">European Parliament and Council Directive 94/62/EC of 20 December 1994 onpackagingandpackagingwaste</a></h3>
+<p class="summary">European Parliament and Council Directive 94/62/EC of 20 December 1994 on packaging and packaging waste Select: 1 OJ L 365, 31.12.1994, pp. 10–23
+		 (ES, DA, DE, EL, EN, FR, IT, NL, PT) This document has been published in a special edition(s) (
+           		FI, SV, CS, ET, LV, LT, HU, MT, PL, SK, SL...</p>
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EUR-Lex</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32025R0040&qid=1772360560665&rid=2" target="_blank" rel="noopener">Regulation(EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 onpackagingandpackagingwaste, amendingRegulation(EU) 2019/1020 and Directive (EU) 2019/904, and repealing Directive 94/62/EC (Text with EEA relevance)</a></h3>
+<p class="summary">Regulation (EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 on packaging and packaging waste , amending Regulation (EU) 2019/1020 and Directive (EU) 2019/904, and repealing Directive 94/62/EC (Text with EEA relevance) Select: 2 PE/73/2024/REV/1 OJ L, 2025/40,  22.1.2025...</p>
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EUR-Lex</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32025R0040&qid=1772360565111&rid=2" target="_blank" rel="noopener">Regulation (EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 onpackagingandpackagingwaste, amending Regulation (EU) 2019/1020 andDirective(EU) 2019/904, and repealingDirective94/62/EC (Text with EEA relevance)</a></h3>
+<p class="summary">Regulation (EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 on packaging and packaging waste, amending Regulation (EU) 2019/1020 and Directive (EU) 2019/904, and repealing Directive 94/62/EC (Text with EEA relevance) Select: 2 PE/73/2024/REV/1 OJ L, 2025/40,  22.1.2025,...</p>
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A31994L0062" target="_blank" rel="noopener">Packaging and Packaging Waste Directive 94/62/EC (PPWD)</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://green-forum.ec.europa.eu/packaging-and-packaging-waste-regulation-implementation_en" target="_blank" rel="noopener">Find more information on the implementation of the Packaging and Packaging Waste Regulation here, including details of national competent authorities.</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://op.europa.eu/en/publication-detail/-/publication/05a3dace-8378-11ea-bf12-01aa75ed71a1" target="_blank" rel="noopener">Report on the effectiveness of the essential requirements for packaging and packaging waste and proposals for reinforcement</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01994L0062-20150526" target="_blank" rel="noopener">Packaging and Packaging Waste Directive (1994)</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng" target="_blank" rel="noopener">Packaging and Packaging Waste Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2023/feb/forslag-til-forordning-om-emballasje-og-emballsjeavfall/id2978356/" target="_blank" rel="noopener">Emballasjeforordningen</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span><span class="kw-tag">emballasjeforordning</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/policy-area/packaging-and-packaging-waste-directive/" target="_blank" rel="noopener">Packaging and Packaging Waste Regulation</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/polands-draft-bill-on-packaging-and-packaging-waste-outlines-the-future-implementation-of-a-state-run-model-for-packaging-epr/" target="_blank" rel="noopener">Poland’s draft bill on Packaging and Packaging Waste outlines the future implementation of a state-run model for packaging EPR</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/the-packaging-and-packaging-waste-regulation-negotiations-continue/" target="_blank" rel="noopener">The Packaging and Packaging Waste Regulation Negotiations Continue</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/news-update-european-commission-proposal-for-the-revision-of-the-packaging-and-packaging-waste-directive/" target="_blank" rel="noopener">News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-and-packaging-waste-directive-whats-new/" target="_blank" rel="noopener">Packaging and Packaging Waste Directive: What’s new?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/one-step-closer-to-the-revision-of-the-packaging-and-packaging-waste-directive/" target="_blank" rel="noopener">One step closer to the revision of the Packaging and Packaging Waste Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/review-of-the-packaging-and-packaging-waste-directive-whats-new/" target="_blank" rel="noopener">Review of the Packaging and Packaging Waste Directive, what’s new?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-value-chain-calls-on-the-european-commission-to-dedicate-appropriate-time-and-resources-to-review-of-the-packaging-and-packaging-waste-directive/" target="_blank" rel="noopener">Packaging value chain calls on the European Commission to dedicate appropriate time and resources to review of the Packaging and Packaging Waste Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/a-proposal-for-a-revised-packaging-and-packaging-waste-directive-by-the-end-of-the-year/" target="_blank" rel="noopener">A proposal for a revised Packaging and Packaging Waste Directive by the end of the year?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/review-of-the-packaging-and-packaging-waste-directive/" target="_blank" rel="noopener">Review of the Packaging and Packaging Waste Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">40</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-calls-for-clear-epr-legal-framework-and-strong-internal-market-safeguard-in-packaging-and-packaging-waste-directive/" target="_blank" rel="noopener">EUROPEN calls for clear EPR legal framework and strong Internal Market safeguard in Packaging and Packaging Waste Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">packaging and packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">35</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/joint-industry-statement-on-references-to-state-run-producer-responsibility-organisations-in-the-ppwr/" target="_blank" rel="noopener">Joint industry statement on references to “state-run producer responsibility organisations” in the PPWR</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for Frukt og grønt: Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="cat-tag">Frukt og grønt</span><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#c78c1c">30</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ec.europa.eu/eurostat/fr/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener">Plastic packaging waste in the EU: 35.3 kg per person</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span><span class="kw-tag">plastic packaging</span></div>
+</div></section>
+<section class="sec"><h2>⚪ Lavere relevans <span class="cnt">(133)</span></h2><p class=desc>Generelle artikler om emballasje og regulering.</p><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/eli/dir/2019/904/oj" target="_blank" rel="noopener">Single-use plastics Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R2151" target="_blank" rel="noopener">Implementing regulation laying down rules on harmonised marking specifications on single-use plastic products listed in Part D of the Annex to the Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Nye merkekrav. SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52025XC05646&qid=1761641812461" target="_blank" rel="noopener">Commission guidelines laying down criteria on the costs of cleaning up litter in accordance with the Directive on Single-use Plastics</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.216.01.0001.01.ENG&toc=OJ%3AC%3A2021%3A216%3ATOC" target="_blank" rel="noopener">Commission guidelines on single-use plastic products in accordance with the Directive on Single-use Plastics</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ec.europa.eu/environment/topics/plastics/single-use-plastics/sups-marking-specifications_en" target="_blank" rel="noopener">Download the vectorised pictograms for the marking of certain single-use plastic products, which are available in all EU languages.</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Nye merkekrav. SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://op.europa.eu/en/publication-detail/-/publication/fbc6134e-367f-11ea-ba6e-01aa75ed71a1" target="_blank" rel="noopener">Brochure on single-use plastics in all EU languages</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge eu-regulering">EU Environment</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://circabc.europa.eu/ui/group/6e9b7f79-da96-4a53-956f-e8f62c9d7fed/library/b48a5d65-5cb5-4a07-af9c-ff115a0623b8/details?download=true" target="_blank" rel="noopener">Factsheet on single-use plastics</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/emballasjedirektivet/id3076915/" target="_blank" rel="noopener">Mindre unødvendig emballasje, meir ombruk</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/endringer-i-regelverk-for-emballasje/id3111827/" target="_blank" rel="noopener">Endringer i regelverk for emballasje</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.ppwr-guidebook.eu/" target="_blank" rel="noopener">PPWR Guidebook NEW</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/unwrapping-ppwr/" target="_blank" rel="noopener">Unwrapping PPWR</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/ppwr-the-clock-is-ticking/" target="_blank" rel="noopener">PPWR: The clock is ticking</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-reaction-to-leaked-draft-ppwr-legal-notice/" target="_blank" rel="noopener">EUROPEN reaction to leaked draft PPWR Legal Notice</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-launches-interactive-ppwr-guidebook-to-help-businesses-navigate-the-ppwr/" target="_blank" rel="noopener">EUROPEN launches an interactive PPWR Guidebook to help businesses navigate the PPWR!</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/unwrapping-ppwr-to-the-finishing-line/" target="_blank" rel="noopener">Unwrapping PPWR… to the finishing line!</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/unwrapping-ppwr-interinstitutional-agreement/" target="_blank" rel="noopener">Unwrapping PPWR: Interinstitutional agreement</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/eu-negotiators-reach-provisional-agreement-on-ppwr/" target="_blank" rel="noopener">EU negotiators reach provisional agreement on PPWR</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/unwrapping-the-ppwr/" target="_blank" rel="noopener">Unwrapping PPWR: European Parliament and Council negotiating positions</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/over-100-associations-warn-current-ppwr-approach-risks-unravelling-the-single-market-and-setting-the-clock-back-on-the-green-deal/" target="_blank" rel="noopener">Over 100 associations warn current PPWR approach risks unravelling the Single Market and setting the clock back on the Green Deal</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/the-ppwr-where-do-we-stand/" target="_blank" rel="noopener">The PPWR: Where do we stand?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje.</div>
+<div class="tags"><span class="kw-tag">PPWR</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/adoption-of-the-single-use-plastics-directive-europen-calls-for-harmonised-consistent-and-proportionate-implementation/" target="_blank" rel="noopener">Adoption of the Single-Use Plastics Directive: EUROPEN calls for harmonised, consistent and proportionate implementation</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/73-packaging-value-chain-organisations-call-on-eu-to-safeguard-the-single-market-in-single-use-plastics-negotiations/" target="_blank" rel="noopener">73 packaging value chain organisations call on EU to safeguard the Single Market in Single-Use Plastics negotiations</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-statement-on-the-envi-vote-on-single-use-plastics/" target="_blank" rel="noopener">EUROPEN – Statement on the ENVI vote on single-use plastics</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-value-chain-coalition-of-68-industry-associations-launches-joint-recommendations-ahead-of-negotiations-on-the-single-use-plastics-proposal/" target="_blank" rel="noopener">Packaging value chain coalition of 68 industry associations launches joint recommendations ahead of negotiations on the Single-Use Plastics proposal</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/joint-statement-from-68-packaging-value-chain-associations-on-the-single-use-plastics-proposal/" target="_blank" rel="noopener">Joint Statement from 68 Packaging Value Chain associations on the Single-Use Plastics Proposal</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">single-use plastic</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-welcomes-eu-plastics-strategys-call-for-strengthened-and-harmonised-packaging-waste-management-systems-in-europe/" target="_blank" rel="noopener">EUROPEN welcomes EU Plastics Strategy’s call for strengthened and harmonised packaging waste management systems in Europe</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/the-circular-economy-package-the-distinct-case-of-packaging-packaging-waste-within-the-wider-eu-waste-policy-framework/" target="_blank" rel="noopener">The Circular Economy Package: the distinct case of packaging & packaging waste within the wider EU waste policy framework</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/new-packaging-packaging-waste-statistics-1998-2011/" target="_blank" rel="noopener">NEW Packaging & Packaging Waste Statistics 1998-2011</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">20</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-waste-management-is-increasingly-resource-efficient-eu-data-shows/" target="_blank" rel="noopener">Packaging Waste Management is Increasingly Resource Efficient – EU Data Shows</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging waste</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">15</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/factsheet-on-extended-producer-responsibility-epr-for-used-packaging/" target="_blank" rel="noopener">Factsheet on Extended Producer Responsibility (EPR) for used packaging</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for Frukt og grønt: Utvidet produsentansvar – kostnadsøkning.</div>
+<div class="tags"><span class="cat-tag">Frukt og grønt</span><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">15</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/recycling-technologies-in-focus-unlocking-the-potential-of-supercritical-co%e2%82%82-purification/" target="_blank" rel="noopener">Recycling Technologies in Focus: Unlocking the Potential of Supercritical CO₂ Purification</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for Blomster: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="cat-tag">Blomster</span><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/plastprodusenter-ma-betale/id3141266/" target="_blank" rel="noopener">Produsenter av plastprodukter må betale for opprydding</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/miljoavtale-om-plastprodukter/id2702585/" target="_blank" rel="noopener">Miljøavtale om plastprodukter</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/signerer-avtale-om-plastpartnerskap-med-naringslivet/id3031686/" target="_blank" rel="noopener">Invitasjon til pressen: Signerer avtale om plastpartnerskap med næringslivet</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/enighet-om-direktiv-som-skal-redusere-negative-miljoeffekter-fra-plastprodukter/id2626241/" target="_blank" rel="noopener">Enighet om direktiv som skal redusere negative miljøeffekter fra plastprodukter</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/ingen-plastavtale-na/id3116009/" target="_blank" rel="noopener">Ingen plastavtale nå</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/inngar-plastpartnerskap-med-naringslivet/id3031748/" target="_blank" rel="noopener">Inngår plastpartnerskap med næringslivet</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/akkreditering-til-siste-motet-i-plastforhandlingene-inc-5/id3066929/" target="_blank" rel="noopener">Presseinformasjon: Akkreditering til siste møtet i plastforhandlingene (INC-5)</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/plastforhandlinger2/id3115436/" target="_blank" rel="noopener">Vil forhandle fram en global plastavtale</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/aktuelt/plastforhandlinger/id3109996/" target="_blank" rel="noopener">PRESSEINFORMASJON: Akkreditering til plastforhandlingene stenger snart</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/meld.-st.-45-20162017/id2558274/" target="_blank" rel="noopener">Meld. St. 45 (2016–2017) - Avfall som ressurs  – avfallspolitikk og sirkulær økonomi</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/nou-2002-19/id145734/" target="_blank" rel="noopener">NOU 2002: 19 - Avfallsforebygging</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/prop.-89-l-20152016/id2481157/" target="_blank" rel="noopener">Prop. 89 L (2015–2016) - Endringer i forurensningsloven (avfallsdefinisjoner m.m.)</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/prop.-72-ls-20212022/id2906151/" target="_blank" rel="noopener">Prop. 72 LS (2021–2022) - Endringer i forurensningsloven  (betingelsene for avfallsfasens opphør)  og samtykke til godkjennelse av  EØS-komiteens beslutning nr. 318/2021  av 29. oktober 2021 om innlemmelse  i EØS-avtalen av direktiv (EU) 2018/851  om</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge lovdata-norge">Regjeringen.no</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.regjeringen.no/no/dokumenter/strategi-for-trygg-sikker-og-forsvarlig-handtering-av-radioaktivt-avfall-i-norge/id3047759/" target="_blank" rel="noopener">Strategi for trygg, sikker og forsvarlig håndtering av radioaktivt avfall i Norge</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">emballasje</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/about-packaging/" target="_blank" rel="noopener">About Packaging</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/policy-area/single-use-plastics-directive/" target="_blank" rel="noopener">Single Use Plastics Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/packaging-with-purpose/" target="_blank" rel="noopener">Packaging With Purpose</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/4660/" target="_blank" rel="noopener">Packaging News — December 2025</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/transforming-epr-the-future-of-circular-packaging/" target="_blank" rel="noopener">Transforming EPR: The future of circular packaging</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Utvidet produsentansvar – kostnadsøkning.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-industry-calls-for-ambitious-28th-legal-regime-to-advance-eu-competitiveness/" target="_blank" rel="noopener">Packaging Industry Calls for Ambitious 28th Legal Regime to Advance EU Competitiveness</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/slovakias-proposed-amendment-to-the-environmental-fund-act-raises-major-concerns-for-the-packaging-value-chain/" target="_blank" rel="noopener">Slovakia’s proposed amendment to the Environmental Fund Act raises major concerns for the packaging value chain</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-october-2025/" target="_blank" rel="noopener">Packaging News – October 2025</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/waste-framework-directive-targeted-review-completed/" target="_blank" rel="noopener">Waste Framework Directive (targeted) review completed</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-july-2025/" target="_blank" rel="noopener">Packaging News — July 2025</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/green-claims-directive-on-hold-turning-point-or-temporary-pause/" target="_blank" rel="noopener">Green Claims Directive on Hold: Turning Point or Temporary Pause?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/industry-call-for-clarity-and-quality-in-green-claims-directive-negotiations/" target="_blank" rel="noopener">Industry call for clarity and quality in Green Claims Directive negotiations</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/4042/" target="_blank" rel="noopener">Packaging News — May 2025</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/green-claims-directive-ongoing-trilogues/" target="_blank" rel="noopener">Green Claims Directive: Ongoing trilogues</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/waste-framework-directive-targeted-revision/" target="_blank" rel="noopener">Waste Framework Directive: Targeted Revision</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/businesses-call-on-the-eu-co-legislators-to-clarify-harmonise-and-simplify-the-green-claims-directive-to-ensure-the-adoption-of-a-framework-safeguarding-businesses-competitiveness/" target="_blank" rel="noopener">Businesses call on the EU co-legislators to clarify, harmonise and simplify the Green Claims Directive to ensure the adoption of a framework safeguarding businesses’ competitiveness</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-december-2024/" target="_blank" rel="noopener">Packaging News — December 2024</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/information-note-on-the-ecodesign-for-sustainable-products-regulation-faq/" target="_blank" rel="noopener">Commission Releases FAQ on Ecodesign for Sustainable Products Regulation (ESPR)</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-october-2024/" target="_blank" rel="noopener">Packaging News — October 2024</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-newsletter-july-2024/" target="_blank" rel="noopener">Packaging News — July 2024</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/industry-associations-call-on-the-council-of-the-european-union-to-establish-a-certain-and-pragmatic-framework-under-the-green-claims-directive/" target="_blank" rel="noopener">Industry associations call on the Council of the European Union to establish a certain and pragmatic framework under the Green Claims Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-newsletter-april-2024/" target="_blank" rel="noopener">Packaging News — April 2024</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/green-claims-directive-state-of-play-interplay-with-packaging-rules/" target="_blank" rel="noopener">Green Claims Directive: State-of-play & Interplay with Packaging Rules</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/waste-framework-directive-negotiations-pending/" target="_blank" rel="noopener">Waste Framework Directive: Negotiations Pending</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/https-www-europen-packaging-eu-wp-content-uploads-2024-02-industry-statement-on-gcd-pdf/" target="_blank" rel="noopener">Industry Statement: Enable the Green Transition with a harmonised, reliable and workable framework for Green Claims Directive</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/joint-industry-statement-calling-for-thoughtful-and-science-based-reuse-policies-in-the-transport-packaging-sector/" target="_blank" rel="noopener">Joint industry statement calling for thoughtful and science-based reuse policies in the transport packaging sector</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Gjenbrukskrav – påvirker logistikk og design.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/work-to-amend-the-waste-framework-directive-continues/" target="_blank" rel="noopener">Work to amend the Waste Framework Directive continues</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-newsletter-december-2023-2/" target="_blank" rel="noopener">Packaging News — December 2023</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-october-2023/" target="_blank" rel="noopener">Packaging News — October 2023</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-newsletter-july-2023/" target="_blank" rel="noopener">Packaging News — July 2023</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-newsletter-may-2023/" target="_blank" rel="noopener">Packaging News — May 2023</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-newsletter-december-2022/" target="_blank" rel="noopener">Packaging News — December 2022</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/update-on-the-waste-framework-directive-review/" target="_blank" rel="noopener">Update on the Waste Framework Directive review</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-october-2022/" target="_blank" rel="noopener">Packaging News — October 2022</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-industry-calls-for-recognition-of-packaging-role-for-the-resilience-of-essential-supply-chains/" target="_blank" rel="noopener">Packaging industry calls for recognition of packaging role for the resilience of essential supply chains</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/what-you-should-know-about-the-waste-framework-directive-review/" target="_blank" rel="noopener">What you should know about the Waste Framework Directive review</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-july-2022/" target="_blank" rel="noopener">Packaging News — July 2022</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/the-waste-framework-review-is-in-motion/" target="_blank" rel="noopener">The Waste Framework Directive review is in motion</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-april-2022/" target="_blank" rel="noopener">Packaging News — April 2022</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/publication-of-the-long-awaited-waste-shipment-regulation-proposal/" target="_blank" rel="noopener">Publication of the long-awaited Waste Shipment Regulation proposal</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/the-packaging-industry-advocates-for-the-creation-of-an-eu-harmonised-model-for-consumer-sorting-instructions/" target="_blank" rel="noopener">The packaging industry advocates for the creation of an EU harmonised model for consumer sorting instructions</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Nye merkekrav.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-december-2021/" target="_blank" rel="noopener">Packaging News — December 2021</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-october-2021/" target="_blank" rel="noopener">Packaging News — October 2021</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/sustainability-aspects-specific-to-packaging-must-be-exclusively-governed-by-the-ppwd/" target="_blank" rel="noopener">Sustainability aspects specific to packaging must be exclusively governed by the PPWD</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-news-july-2021/" target="_blank" rel="noopener">Packaging News — July 2021</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/the-review-of-the-waste-framework-directive-is-around-the-corner/" target="_blank" rel="noopener">The review of the Waste Framework Directive is around the corner</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/newsletter/" target="_blank" rel="noopener">Packaging News — April 2021</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-is-an-essential-component-of-the-eu-food-supply-chain/" target="_blank" rel="noopener">Packaging is an essential component of the EU food supply chain</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/european-commission-kicks-off-work-on-its-sustainable-products-initiative-whats-at-stake-for-the-packaging-sector/" target="_blank" rel="noopener">European Commission kicks-off work on its Sustainable Products Initiative. What’s at stake for the packaging sector?</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-value-chain-calls-on-eu-to-protect-the-single-market-to-deliver-on-the-green-deal-and-circular-economy/" target="_blank" rel="noopener">Packaging value chain calls on EU to protect the Single Market to deliver on the Green Deal and circular economy</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/views-of-the-packaging-supply-chain-on-fiscal-measures-related-to-packaging-materials-and-applications/" target="_blank" rel="noopener">Views of the Packaging Supply Chain on Fiscal Measures related to Packaging Materials and Applications</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-needs-to-be-recognised-by-eu-and-national-governments-as-an-essential-part-of-the-continued-flow-of-goods-during-the-covid-19-pandemic/" target="_blank" rel="noopener">Packaging needs to be recognised by EU and national governments as an essential part of the continued flow of goods during the COVID-19 pandemic</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-supply-chain-joins-alliance-to-ensure-necessary-framework-conditions-for-circular-plastics/" target="_blank" rel="noopener">Packaging Supply Chain joins alliance to ensure necessary framework conditions for circular plastics</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/single-use-plastics-directive-73-national-and-eu-industries-call-on-eu-to-safeguard-the-internal-market-for-packaging-and-packaged-goods-in-view-of-trilogues/" target="_blank" rel="noopener">Single Use Plastics Directive- 73 national and EU industries call on EU to safeguard the Internal Market for packaging and packaged goods in view of trilogues</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-industry-leaders-reaffirm-commitment-to-packaging-innovation-for-a-circular-economy-at-europens-25th-anniversary/" target="_blank" rel="noopener">Packaging industry leaders reaffirm commitment to packaging innovation for a circular economy at EUROPEN’s 25th anniversary</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/127-industry-organisations-urge-the-eu-to-safeguard-the-internal-market-for-packaging-and-packaged-goods/" target="_blank" rel="noopener">127 industry organisations urge the EU to safeguard the Internal Market for packaging and packaged goods</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/129-national-and-eu-industries-call-to-safeguard-the-internal-market-for-packaging-and-packaged-goods-in-the-circular-economy-package/" target="_blank" rel="noopener">129 National and EU industries call to safeguard the Internal Market for Packaging and Packaged Goods in the Circular Economy Package</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/36-packaging-value-chain-industry-associations-launch-joint-recommendations-ahead-of-negotiations-on-the-eu-cep/" target="_blank" rel="noopener">36 packaging value chain industry associations launch joint recommendations ahead of negotiations on the EU CEP</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/36-packaging-value-chain-industry-associations-launch-joint-recommendations-ahead-of-inter-institutional-negotiations-on-the-eu-cep/" target="_blank" rel="noopener">36 packaging value chain industry associations launch joint recommendations ahead of inter-institutional negotiations on the EU CEP</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/38-packaging-value-chain-industry-associations-launch-joint-recommendations-for-a-resource-efficient-circular-economy/" target="_blank" rel="noopener">38 Packaging Value Chain Industry Associations launch joint recommendations for a resource-efficient Circular Economy</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/joint-statement-from-38-packaging-value-chain-associations-on-the-legislative-review-amending-the-wfd-and-ppwd/" target="_blank" rel="noopener">Joint Statement from 38 Packaging Value Chain associations on the legislative review amending the WFD and PPWD</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-supply-chain-calls-for-strengthened-protection-of-the-internal-market-in-waste-proposals/" target="_blank" rel="noopener">Packaging supply chain calls for strengthened protection of the Internal Market in waste proposals</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-supply-chain-welcomes-the-circular-economy-package-and-presents-its-preliminary-views-on-the-wfd-and-ppwd-legislative-proposals/" target="_blank" rel="noopener">Packaging supply chain welcomes the Circular Economy Package and presents its preliminary views on the WFD and PPWD legislative proposals</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-value-chain-industries-launch-joint-recommendations-for-a-resource-efficient-circular-economy/" target="_blank" rel="noopener">Packaging Value Chain Industries launch joint recommendations for a resource-efficient Circular Economy</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/policy-debate-on-circular-economy-and-packaging-the-role-of-epr/" target="_blank" rel="noopener">Policy debate on Circular Economy and Packaging – The role of EPR</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: Utvidet produsentansvar – kostnadsøkning.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-supply-chain-calls-on-commission-to-introduce-new-circular-economy-proposal-without-delay/" target="_blank" rel="noopener">Packaging supply chain calls on Commission to introduce new Circular Economy proposal without delay</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/joint-statement-by-packaging-value-chain-industries-on-the-eu-waste-package/" target="_blank" rel="noopener">Joint Statement by Packaging Value Chain Industries on the EU Waste Package</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-supply-chain-calls-for-circular-economy-that-promotes-sustainable-growth-and-competitiveness/" target="_blank" rel="noopener">Packaging supply chain calls for circular economy that promotes sustainable growth and competitiveness</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/time-to-foster-packagings-contribution-towards-a-resource-efficient-europe/" target="_blank" rel="noopener">Time to foster packaging’s contribution towards a resource efficient Europe</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/realistic-eu-targets-key-to-continued-progress-in-packaging-recycling-and-recoverynew-eu-data-shows/" target="_blank" rel="noopener">Realistic EU targets key to continued progress in packaging recycling and recovery,new EU data shows</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-20th-anniversary-event-packaging-and-sustainability/" target="_blank" rel="noopener">EUROPEN 20th Anniversary Event – Packaging and Sustainability</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/europen-fostering-packagings-contribution-to-delivering-resource-efficiency-in-europe/" target="_blank" rel="noopener">EUROPEN – Fostering packaging’s contribution to delivering Resource Efficiency in Europe</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/packaging-and-the-environment-a-new-guide-to-european-legislation/" target="_blank" rel="noopener">Packaging and the Environment – A New Guide to European Legislation</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">EUROPEN</span>
+<span class="access-badge delvis-åpen">🔓 delvis åpen</span>
+
+</div>
+</div>
+<h3><a href="https://www.europen-packaging.eu/news/global-project-on-packaging-and-sustainability-enters-pilot-phase/" target="_blank" rel="noopener">Global project on packaging and sustainability enters pilot phase</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">packaging regulation</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/flexible-packaging-in-europe/" target="_blank" rel="noopener">Flexible Packaging in Europe</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://guidelines.ceflex.eu" target="_blank" rel="noopener">Design Guidelines</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/raising-the-bar-together-insights-from-two-years-of-collective-testing-on-flexible-packaging-sortability-and-recyclability/" target="_blank" rel="noopener">Raising the Bar Together: Insights from Two Years of Collective Testing on Flexible Packaging Sortability and Recyclability</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/better-by-design-isabelle-jenny-on-packaging-that-meets-the-moment-and-whats-coming-next-with-legislation/" target="_blank" rel="noopener">Better by Design: Isabelle Jenny on Packaging That Meets the Moment – and What’s Coming Next with Legislation</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/bridging-complexity-and-compliance-your-tools-to-flexible-packaging-design/" target="_blank" rel="noopener">Bridging complexity and compliance: your tools to flexible packaging design</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/designing-for-2030-navigating-new-practices-and-staying-ahead-of-the-curve-nikola-juhasz/" target="_blank" rel="noopener">Designing for 2030: navigating new practices and staying ahead of the curve</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/designing-for-2030-navigating-new-practices-and-staying-ahead-of-the-curve/" target="_blank" rel="noopener">Designing for 2030: navigating new practices and staying ahead of the curve</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/catalysing-local-action-in-romania-to-meet-eu-packaging-targets/" target="_blank" rel="noopener">Catalysing Local Action in Romania to Meet EU Packaging Targets</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/when-the-rubber-hits-the-road-delivering-circularity-and-legislation-for-flexible-packaging-across-europe/" target="_blank" rel="noopener">When the rubber hits the road: Delivering circularity and legislation for flexible packaging across Europe</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/new-recycling-technologies-to-unlock-circularity-in-flexible-packaging-new-report-highlights-enablers-of-high-quality-recyclates/" target="_blank" rel="noopener">New Recycling Technologies to Unlock Circularity in Flexible Packaging – New Report Highlights Enablers of High-Quality Recyclates</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/recycling-technologies-in-focus-advancing-circularity-with-dissolution-recycling/" target="_blank" rel="noopener">Recycling Technologies in Focus: Advancing Circularity with Dissolution Recycling</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/from-policy-to-practice-staying-ahead-of-packaging-legislation/" target="_blank" rel="noopener">From policy to practice: staying ahead of packaging legislation</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/new-recycling-technology-perspectives-interview-with-sebastian-kernbaum-managing-director-saperatec/" target="_blank" rel="noopener">New Recycling Technology Perspectives: Interview with Sebastian Kernbaum, Managing Director, Saperatec</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div><div class="card">
+<div class="card-top">
+<div class="score" style="background:#999">0</div>
+<div class="meta">
+<span class="src-badge bransjeorganisasjon">CEFLEX</span>
+<span class="access-badge åpen">🔓 åpen</span>
+
+</div>
+</div>
+<h3><a href="https://ceflex.eu/recycling-technologies-in-focus-scaling-innovation-for-flexible-plastics/" target="_blank" rel="noopener">Recycling Technologies in Focus: Scaling Innovation for Flexible Plastics</a></h3>
+
+<div class="impact-basic"><strong>💡</strong> Generell relevans for generelt emballasje.</div>
+<div class="tags"><span class="kw-tag">recyclable packaging</span></div>
+</div></section>
+
+</div>
+
+<footer>
+<p>Packaging Regulation Monitor v2.0 – Oppdatert 01.03.2026 10:23</p>
+<p>Kilder: EUR-Lex · EU Environment · FreshPlaza · Packaging Europe · Packaging World · Regjeringen.no · Miljødirektoratet · EUROPEN · CEFLEX · LinkedIn (via Google)</p>
+<p style="margin-top:.5rem">Kjøres daglig kl 06:00 via GitHub Actions · AI-analyse av Claude (Anthropic)</p>
+</footer>
+</body></html>
