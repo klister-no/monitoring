@@ -1050,120 +1050,96 @@ Skriv direkte, ingen JSON. Bruk overskriftene over."""
 
 # ─── HTML-rapport ────────────────────────────────────────────────────────────
 
+
 def generate_html_report(articles, daily_summary, weekly_summary, output_path):
     now = datetime.now().strftime("%d.%m.%Y %H:%M")
-    articles.sort(key=lambda a: a.relevance_score, reverse=True)
+
+    # Sorter: nyeste dato først, uten dato sist
+    def sort_key(a):
+        return (0, a.date) if a.date else (1, "0000-00-00")
+    articles.sort(key=sort_key, reverse=True)
 
     total = len(articles)
     accessible = len([a for a in articles if a.article_accessible])
     paywalled = len([a for a in articles if a.paywall_detected])
     with_date = len([a for a in articles if a.date])
+    high = [a for a in articles if a.relevance_score >= 60]
+    medium = [a for a in articles if 30 <= a.relevance_score < 60]
     by_type = {}
     for a in articles:
         by_type[a.source_type] = by_type.get(a.source_type, 0) + 1
 
-    high = [a for a in articles if a.relevance_score >= 60]
-    medium = [a for a in articles if 30 <= a.relevance_score < 60]
-    low = [a for a in articles if a.relevance_score < 30]
-
     source_rows = ""
     for name, info in SOURCES.items():
         count = len([a for a in articles if a.source == name])
-        source_rows += f"""<tr>
-<td><strong>{name}</strong></td>
-<td>{info["type"]}</td>
-<td><span class="access-badge {info["access"].replace(" ", "-")}">{info["access"]}</span></td>
-<td>{info["description"]}</td>
-<td class="count">{count}</td></tr>"""
+        source_rows += f'<tr><td><strong>{name}</strong></td><td>{info["type"]}</td><td><span class="access-badge {info["access"].replace(" ", "-")}">{info["access"]}</span></td><td>{info["description"]}</td><td class="count">{count}</td></tr>'
 
-    # Weekly summary section
     weekly_section = ""
     if weekly_summary:
-        formatted = weekly_summary.replace("**SITUASJONSBILDE**", '<h3 class="ws-h">📊 Situasjonsbilde</h3>')
-        formatted = formatted.replace("**FRUKT & GRØNT**", '<h3 class="ws-h">🥬 Frukt & Grønt</h3>')
-        formatted = formatted.replace("**DRIKKE**", '<h3 class="ws-h">🥤 Drikke</h3>')
-        formatted = formatted.replace("**BLOMSTER**", '<h3 class="ws-h">💐 Blomster</h3>')
-        formatted = formatted.replace("**ANBEFALT HANDLING**", '<h3 class="ws-h">⚡ Anbefalt handling</h3>')
-        formatted = formatted.replace("\n", "<br>")
-        weekly_section = f"""
-<section class="weekly-summary">
-<h2>📋 Ukentlig Executive Summary</h2>
-<div class="weekly-box">{formatted}</div>
-</section>"""
+        fmt = weekly_summary
+        for old, new in [("**SITUASJONSBILDE**",'<h3 class="ws-h">📊 Situasjonsbilde</h3>'),("**FRUKT & GRØNT**",'<h3 class="ws-h">🥬 Frukt & Grønt</h3>'),("**DRIKKE**",'<h3 class="ws-h">🥤 Drikke</h3>'),("**BLOMSTER**",'<h3 class="ws-h">💐 Blomster</h3>'),("**ANBEFALT HANDLING**",'<h3 class="ws-h">⚡ Anbefalt handling</h3>')]:
+            fmt = fmt.replace(old, new)
+        fmt = fmt.replace("\n", "<br>")
+        weekly_section = f'<section class="weekly-summary"><h2>📋 Ukentlig Executive Summary</h2><div class="weekly-box">{fmt}</div></section>'
 
     daily_section = ""
     if daily_summary:
-        daily_section = f"""
-<section class="daily-summary">
-<h2>🤖 AI Daglig Sammendrag</h2>
-<div class="summary-box">{daily_summary}</div>
-</section>"""
-
-    # Feedback section
-    feedback_section = """
-<section class="feedback-section">
-<h2>🎓 Gi feedback – gjør monitoren smartere</h2>
-<p class="feedback-info">Rediger filen <code>feedback.json</code> i repoet for å gjøre AI-analysen bedre over tid:</p>
-<div class="feedback-examples">
-<div class="fb-card">
-<strong>Legg til instruksjoner:</strong>
-<code>"instructions": ["Vi bruker hovedsakelig PET og rPET for bærskåler", "Norske regler er viktigere enn tyske"]</code>
-</div>
-<div class="fb-card">
-<strong>Marker gode artikler:</strong>
-<code>"positive_examples": [{"title": "PPWR reuse targets...", "reason": "Direkte relevant for våre bærskåler"}]</code>
-</div>
-<div class="fb-card">
-<strong>Marker irrelevante artikler:</strong>
-<code>"negative_examples": [{"title": "Cosmetics packaging...", "reason": "Vi jobber ikke med kosmetikk"}]</code>
-</div>
-</div>
-</section>"""
+        daily_section = f'<section class="daily-summary"><h2>🤖 AI Daglig Sammendrag</h2><div class="summary-box">{daily_summary}</div></section>'
 
     def access_badge(art):
         if art.paywall_detected:
             return '<span class="access-badge lukket">🔒 Betalingsmur</span>'
-        elif not art.article_accessible:
+        if not art.article_accessible:
             return '<span class="access-badge lukket">🚫 Utilgjengelig</span>'
-        else:
-            badge_class = art.source_access.replace(" ", "-")
-            return f'<span class="access-badge {badge_class}">{"🔓 " if "åpen" in art.source_access else "🔒 "}{art.source_access}</span>'
+        bc = art.source_access.replace(" ", "-")
+        ic = "🔓 " if "åpen" in art.source_access else "🔒 "
+        return f'<span class="access-badge {bc}">{ic}{art.source_access}</span>'
 
-    def card(art):
-        cats = "".join(f'<span class="cat-tag">{c}</span>' for c in art.relevance_categories)
-        kws = "".join(f'<span class="kw-tag">{k}</span>' for k in art.matched_keywords[:5])
+    def is_new(art):
+        if not art.date:
+            return False
+        try:
+            return (datetime.now() - datetime.strptime(art.date[:10], "%Y-%m-%d")).days <= 1
+        except ValueError:
+            return False
+
+    all_cards = ""
+    for art in articles:
+        cats_html = "".join(f'<span class="cat-tag">{c}</span>' for c in art.relevance_categories)
+        kws_html = "".join(f'<span class="kw-tag">{k}</span>' for k in art.matched_keywords[:5])
         sc = "#22763d" if art.relevance_score >= 60 else "#c78c1c" if art.relevance_score >= 30 else "#999"
         date_html = format_date_display(art.date)
+        new_badge = '<span class="new-badge">NY</span>' if is_new(art) else ""
+        rel_class = "high" if art.relevance_score >= 60 else "medium" if art.relevance_score >= 30 else "low"
+        cat_data = " ".join(c.lower().replace("/", "-").replace(" ", "-") for c in art.relevance_categories) if art.relevance_categories else "ukategorisert"
+        src_data = art.source_type.lower().replace("/", "-").replace(" ", "-")
+        access_data = "open" if art.article_accessible and not art.paywall_detected else "closed"
+        safe_title = art.title.replace('"', '&quot;').lower()
+        safe_url = art.url.replace("'", "\\'")
 
         summary_html = ""
         if art.ai_summary:
             summary_html = f'<div class="ai-block"><span class="ai-label">🤖 AI-sammendrag</span><p>{art.ai_summary}</p></div>'
         elif art.summary:
             summary_html = f'<p class="summary">{art.summary[:300]}...</p>'
-
         impact_html = ""
         if art.ai_impact:
             impact_html = f'<div class="ai-block impact"><span class="ai-label">💡 AI-vurdering</span><p>{art.ai_impact}</p></div>'
         elif art.impact_assessment:
             impact_html = f'<div class="impact-basic"><strong>💡</strong> {art.impact_assessment}</div>'
 
-        return f"""<div class="card">
+        all_cards += f'''<div class="card rel-{rel_class}" data-cats="{cat_data}" data-src="{src_data}" data-access="{access_data}" data-title="{safe_title}" data-score="{art.relevance_score}" data-date="{art.date}">
 <div class="card-top">
 <div class="score" style="background:{sc}">{art.relevance_score}</div>
-<div class="meta">
-<span class="src-badge {art.source_type.lower().replace('/', '-')}">{art.source}</span>
-{access_badge(art)} {date_html}
-</div></div>
+<div class="meta"><span class="src-badge {src_data}">{art.source}</span>{access_badge(art)}{date_html}{new_badge}</div>
+<button class="copy-btn" onclick="copyLink(this,'{safe_url}')" title="Kopier lenke">📋</button>
+<button class="expand-btn" onclick="toggleCard(this)" title="Vis/skjul">▼</button>
+</div>
 <h3><a href="{art.url}" target="_blank" rel="noopener">{art.title}</a></h3>
-{summary_html}{impact_html}
-<div class="tags">{cats}{kws}</div></div>"""
+<div class="card-details">{summary_html}{impact_html}<div class="tags">{cats_html}{kws_html}</div></div></div>
+'''
 
-    def section(title, icon, arts, desc=""):
-        if not arts:
-            return f'<section class="sec"><h2>{icon} {title} <span class="cnt">(0)</span></h2><p class="empty">Ingen artikler i denne kategorien.</p></section>'
-        return f'<section class="sec"><h2>{icon} {title} <span class="cnt">({len(arts)})</span></h2>{f"<p class=desc>{desc}</p>" if desc else ""}{"".join(card(a) for a in arts)}</section>'
-
-    html = f"""<!DOCTYPE html>
+    html = f'''<!DOCTYPE html>
 <html lang="no">
 <head>
 <meta charset="UTF-8">
@@ -1175,107 +1151,173 @@ def generate_html_report(articles, daily_summary, weekly_summary, output_path):
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}}
 .wrap{{max-width:1100px;margin:0 auto;padding:1.5rem}}
-header{{background:linear-gradient(135deg,#0a1628 0%,#1a2742 40%,#2d4a3e 100%);color:#fff;padding:3rem 2rem}}
-header h1{{font-family:'Playfair Display',serif;font-size:2.4rem;margin-bottom:.3rem}}
-header .sub{{opacity:.75;font-size:1rem;margin-bottom:.3rem}}
-header .ts{{opacity:.45;font-size:.85rem}}
-.stats{{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.8rem;margin:1.5rem 0;padding:1.25rem;background:var(--card);border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.05)}}
-.stat{{text-align:center;padding:.4rem}}
-.stat .n{{font-size:1.8rem;font-weight:700;color:var(--green)}}
-.stat .l{{font-size:.78rem;color:var(--muted);margin-top:.1rem}}
-.sources-section,.weekly-summary,.daily-summary,.feedback-section{{margin:2rem 0}}
-.sources-section h2,.weekly-summary h2,.daily-summary h2,.feedback-section h2,.sec h2{{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--green)}}
-table{{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}}
-th{{background:#1a2742;color:#fff;padding:.7rem 1rem;text-align:left;font-size:.85rem}}
-td{{padding:.6rem 1rem;border-bottom:1px solid var(--border);font-size:.88rem}}
-td.count{{text-align:center;font-weight:700;color:var(--green)}}
-tr:hover{{background:#f8f9fa}}
-.access-badge{{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.72rem;font-weight:600}}
-.access-badge.åpen{{background:#d4edda;color:#155724}}
-.access-badge.delvis-åpen{{background:#fff3cd;color:#856404}}
-.access-badge.delvis-lukket{{background:#fde2d8;color:#a84200}}
-.access-badge.lukket{{background:#f8d7da;color:#721c24}}
-.weekly-summary{{padding:0}}
-.weekly-box{{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border-left:4px solid var(--green);padding:1.5rem;border-radius:8px;font-size:.95rem;line-height:1.7}}
-.ws-h{{color:var(--green);font-size:1rem;margin:1rem 0 .3rem;font-family:'DM Sans',sans-serif}}
+header{{background:linear-gradient(135deg,#0a1628 0%,#1a2742 40%,#2d4a3e 100%);color:#fff;padding:1.2rem 2rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.2)}}
+header h1{{font-family:'Playfair Display',serif;font-size:1.6rem;display:inline}}
+header .ts{{float:right;opacity:.6;font-size:.8rem;margin-top:.3rem}}
+header .sub{{opacity:.55;font-size:.82rem;margin-top:.15rem}}
+.stats{{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:.5rem;margin:1.2rem 0;padding:1rem;background:var(--card);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.04)}}
+.stat{{text-align:center;padding:.2rem}}
+.stat .n{{font-size:1.5rem;font-weight:700;color:var(--green)}}
+.stat .l{{font-size:.7rem;color:var(--muted)}}
+.weekly-summary,.daily-summary{{margin:1.5rem 0}}
+.weekly-summary h2,.daily-summary h2{{font-family:'Playfair Display',serif;font-size:1.25rem;margin-bottom:.7rem}}
+.weekly-box{{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border-left:4px solid var(--green);padding:1.2rem;border-radius:8px;font-size:.9rem;line-height:1.7}}
+.ws-h{{color:var(--green);font-size:.92rem;margin:1rem 0 .25rem;font-family:'DM Sans'}}
 .ws-h:first-child{{margin-top:0}}
-.daily-summary .summary-box{{background:linear-gradient(135deg,#eef2ff,#f0ebff);border-left:4px solid var(--ai-border);padding:1.25rem;border-radius:8px;font-size:.95rem;line-height:1.7}}
-.feedback-section .feedback-info{{color:var(--muted);margin-bottom:1rem}}
-.feedback-examples{{display:grid;gap:.8rem}}
-.fb-card{{background:var(--card);padding:1rem;border-radius:8px;border:1px solid var(--border)}}
-.fb-card strong{{display:block;margin-bottom:.3rem;font-size:.9rem}}
-.fb-card code{{display:block;background:#f8f8f8;padding:.5rem;border-radius:4px;font-size:.78rem;overflow-x:auto;white-space:pre-wrap}}
-.date{{font-size:.78rem;color:var(--muted)}}
-.date-fresh{{color:var(--green);font-weight:500}}
-.date-recent{{color:#856404}}
-.date-older{{color:var(--muted)}}
-.date-unknown{{color:#ccc;font-style:italic}}
-.cnt{{font-weight:400;color:var(--muted);font-size:.95rem}}
-.desc,.empty{{color:var(--muted);margin-bottom:1rem;font-size:.92rem}}
-.card{{background:var(--card);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:.85rem;box-shadow:0 1px 4px rgba(0,0,0,.04);border-left:4px solid var(--border);transition:transform .15s}}
-.card:hover{{transform:translateX(3px)}}
-.card-top{{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;flex-wrap:wrap}}
-.score{{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.82rem;flex-shrink:0}}
-.meta{{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap}}
-.src-badge{{padding:2px 9px;border-radius:20px;font-size:.72rem;font-weight:600;color:#fff}}
+.daily-summary .summary-box{{background:linear-gradient(135deg,#eef2ff,#f0ebff);border-left:4px solid var(--ai-border);padding:1.1rem;border-radius:8px;font-size:.9rem;line-height:1.7}}
+.toolbar{{background:var(--card);padding:.9rem 1rem;border-radius:12px;margin:1.2rem 0;box-shadow:0 1px 6px rgba(0,0,0,.04);position:sticky;top:60px;z-index:90}}
+.toolbar-row{{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:.5rem}}
+.toolbar-row:last-child{{margin-bottom:0}}
+.toolbar label{{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}}
+.fb{{padding:3px 11px;border-radius:20px;border:1.5px solid var(--border);background:#fff;font-size:.76rem;cursor:pointer;transition:all .12s;font-family:inherit}}
+.fb:hover{{border-color:var(--green);color:var(--green)}}
+.fb.active{{background:var(--green);color:#fff;border-color:var(--green)}}
+.search-input{{flex:1;min-width:180px;padding:5px 11px;border:1.5px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none}}
+.search-input:focus{{border-color:var(--green)}}
+.sort-select{{padding:4px 8px;border:1.5px solid var(--border);border-radius:8px;font-size:.8rem;font-family:inherit}}
+.filter-count{{font-size:.8rem;color:var(--muted);margin-left:auto}}
+.compact-toggle{{padding:3px 11px;border-radius:20px;border:1.5px solid var(--border);background:#fff;font-size:.76rem;cursor:pointer;font-family:inherit}}
+.compact-toggle.active{{background:#1a2742;color:#fff;border-color:#1a2742}}
+.articles-container{{margin:1rem 0}}
+.card{{background:var(--card);border-radius:10px;padding:1rem 1.2rem;margin-bottom:.65rem;box-shadow:0 1px 3px rgba(0,0,0,.04);border-left:4px solid var(--border);transition:all .12s}}
+.card:hover{{transform:translateX(2px)}}
+.card.hidden{{display:none}}
+.card.rel-high{{border-left-color:var(--green)}}
+.card.rel-medium{{border-left-color:#e9a319}}
+.card-top{{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}}
+.score{{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.78rem;flex-shrink:0}}
+.meta{{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap;flex:1}}
+.src-badge{{padding:2px 8px;border-radius:20px;font-size:.68rem;font-weight:600;color:#fff}}
 .src-badge.eu-regulering{{background:#003399}}
 .src-badge.fagmedia{{background:#d35400}}
 .src-badge.lovdata-norge{{background:#6c3483}}
 .src-badge.bransjeorganisasjon{{background:#2c3e50}}
 .src-badge.sosialt-fagnettverk{{background:#0077b5}}
-h3{{font-size:1.05rem;margin-bottom:.4rem}}
+.access-badge{{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.68rem;font-weight:600}}
+.access-badge.åpen{{background:#d4edda;color:#155724}}
+.access-badge.delvis-åpen{{background:#fff3cd;color:#856404}}
+.access-badge.delvis-lukket{{background:#fde2d8;color:#a84200}}
+.access-badge.lukket{{background:#f8d7da;color:#721c24}}
+.date{{font-size:.74rem;color:var(--muted)}}
+.date-fresh{{color:var(--green);font-weight:600}}
+.date-recent{{color:#856404}}
+.date-older,.date-unknown{{color:#bbb}}
+.new-badge{{background:#dc3545;color:#fff;padding:1px 6px;border-radius:10px;font-size:.6rem;font-weight:700;text-transform:uppercase;animation:pulse 2s infinite}}
+@keyframes pulse{{0%,100%{{opacity:1}}50%{{opacity:.6}}}}
+.copy-btn,.expand-btn{{background:none;border:1px solid var(--border);border-radius:6px;padding:1px 7px;cursor:pointer;font-size:.75rem;transition:all .12s}}
+.copy-btn:hover,.expand-btn:hover{{background:#f0f0f0}}
+.copy-btn.copied{{background:var(--green-lt);border-color:var(--green)}}
+h3{{font-size:.98rem;margin:.35rem 0}}
 h3 a{{color:var(--text);text-decoration:none}}
 h3 a:hover{{color:var(--green);text-decoration:underline}}
-.summary{{color:var(--muted);font-size:.88rem;margin-bottom:.6rem}}
-.ai-block{{background:var(--ai-bg);border-left:3px solid var(--ai-border);border-radius:6px;padding:.7rem 1rem;margin-bottom:.6rem;font-size:.88rem}}
+.card-details{{margin-top:.4rem}}
+.summary{{color:var(--muted);font-size:.84rem;margin-bottom:.4rem}}
+.ai-block{{background:var(--ai-bg);border-left:3px solid var(--ai-border);border-radius:6px;padding:.6rem .85rem;margin-bottom:.45rem;font-size:.84rem}}
 .ai-block.impact{{background:#fef9e7;border-left-color:#f1c40f}}
-.ai-label{{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ai-border);display:block;margin-bottom:.25rem}}
+.ai-label{{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ai-border);display:block;margin-bottom:.2rem}}
 .ai-block.impact .ai-label{{color:#b7950b}}
 .ai-block p{{margin:0;line-height:1.5}}
-.impact-basic{{background:#fef9e7;border-left:3px solid #f1c40f;border-radius:6px;padding:.6rem .9rem;font-size:.86rem;margin-bottom:.6rem}}
-.tags{{display:flex;gap:.35rem;flex-wrap:wrap}}
-.cat-tag{{background:var(--green-lt);color:var(--green);padding:2px 7px;border-radius:4px;font-size:.72rem;font-weight:500}}
-.kw-tag{{background:#eef;color:#555;padding:2px 7px;border-radius:4px;font-size:.7rem}}
-footer{{text-align:center;padding:2rem;color:var(--muted);font-size:.82rem}}
+.impact-basic{{background:#fef9e7;border-left:3px solid #f1c40f;border-radius:6px;padding:.5rem .8rem;font-size:.84rem;margin-bottom:.45rem}}
+.tags{{display:flex;gap:.3rem;flex-wrap:wrap}}
+.cat-tag{{background:var(--green-lt);color:var(--green);padding:2px 6px;border-radius:4px;font-size:.68rem;font-weight:500}}
+.kw-tag{{background:#eef;color:#555;padding:2px 6px;border-radius:4px;font-size:.66rem}}
+body.compact .card-details{{display:none}}
+body.compact .card{{padding:.6rem 1rem;margin-bottom:.35rem}}
+.sources-section{{margin:3rem 0 1rem}}
+.sources-section h2{{font-family:'Playfair Display',serif;font-size:1.25rem;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:2px solid var(--green)}}
+table{{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}}
+th{{background:#1a2742;color:#fff;padding:.5rem .7rem;text-align:left;font-size:.8rem}}
+td{{padding:.45rem .7rem;border-bottom:1px solid var(--border);font-size:.83rem}}
+td.count{{text-align:center;font-weight:700;color:var(--green)}}
+tr:hover{{background:#f8f9fa}}
+.feedback-section{{margin:2rem 0}}
+.feedback-section h2{{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:.6rem}}
+.feedback-info{{color:var(--muted);font-size:.85rem;margin-bottom:.6rem}}
+.fb-cards{{display:grid;gap:.5rem}}
+.fb-card{{background:var(--card);padding:.7rem;border-radius:8px;border:1px solid var(--border);font-size:.82rem}}
+.fb-card strong{{display:block;margin-bottom:.2rem;font-size:.8rem}}
+.fb-card code{{display:block;background:#f8f8f8;padding:.35rem;border-radius:4px;font-size:.7rem;overflow-x:auto;white-space:pre-wrap}}
+footer{{text-align:center;padding:1.5rem;color:var(--muted);font-size:.78rem}}
 footer a{{color:var(--green)}}
-@media(max-width:768px){{.wrap{{padding:1rem}}header{{padding:2rem 1rem}}header h1{{font-size:1.6rem}}.stats{{grid-template-columns:repeat(3,1fr)}}table{{font-size:.8rem}}th,td{{padding:.4rem .5rem}}}}
+@media(max-width:768px){{.wrap{{padding:.7rem}}header{{position:relative;padding:1rem}}header h1{{font-size:1.3rem}}header .ts{{float:none;display:block}}.stats{{grid-template-columns:repeat(4,1fr)}}.toolbar{{position:relative;top:0}}table{{font-size:.73rem}}th,td{{padding:.3rem .4rem}}}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-<h1>📦 Emballasjeregulering Monitor</h1>
-<p class="sub">PPWR · SUP-direktivet · Emballasjelovgivning · Frukt & Grønt · Drikke · Blomster</p>
-<p class="ts">Sist skannet: {now} · Neste: i morgen kl 06:00</p>
+<header><div class="wrap" style="padding:.3rem 0">
+<h1>📦 Emballasjeregulering Monitor</h1><span class="ts">Sist skannet: {now}</span>
+<p class="sub">PPWR · SUP · Frukt & Grønt · Drikke · Blomster</p>
 </div></header>
 <div class="wrap">
+{weekly_section}{daily_section}
 <div class="stats">
 <div class="stat"><div class="n">{total}</div><div class="l">Totalt</div></div>
 <div class="stat"><div class="n">{accessible}</div><div class="l">Tilgjengelige</div></div>
 <div class="stat"><div class="n">{paywalled}</div><div class="l">Betalingsmur</div></div>
 <div class="stat"><div class="n">{with_date}</div><div class="l">Med dato</div></div>
 <div class="stat"><div class="n">{len(high)}</div><div class="l">Høy relevans</div></div>
-<div class="stat"><div class="n">{by_type.get('EU/Regulering', 0)}</div><div class="l">EU/Regulering</div></div>
-<div class="stat"><div class="n">{by_type.get('Fagmedia', 0)}</div><div class="l">Fagmedia</div></div>
-<div class="stat"><div class="n">{by_type.get('Lovdata/Norge', 0)}</div><div class="l">Norske kilder</div></div>
+<div class="stat"><div class="n">{len(medium)}</div><div class="l">Medium</div></div>
+<div class="stat"><div class="n">{by_type.get('EU/Regulering',0)}</div><div class="l">EU/Reg.</div></div>
+<div class="stat"><div class="n">{by_type.get('Fagmedia',0)}</div><div class="l">Fagmedia</div></div>
 </div>
-{weekly_section}
-{daily_section}
-<section class="sources-section">
-<h2>📡 Kilder og tilgangsstatus</h2>
-<table>
-<thead><tr><th>Kilde</th><th>Type</th><th>Tilgang</th><th>Beskrivelse</th><th>Funn</th></tr></thead>
+<div class="toolbar">
+<div class="toolbar-row">
+<label>Søk:</label>
+<input type="text" class="search-input" id="searchInput" placeholder="Søk i artikkeltitler..." oninput="applyFilters()">
+<label>Sorter:</label>
+<select class="sort-select" id="sortSelect" onchange="applyFilters()">
+<option value="date-desc">Nyeste først</option><option value="date-asc">Eldste først</option>
+<option value="score-desc">Høyest relevans</option><option value="score-asc">Lavest relevans</option>
+</select>
+<button class="compact-toggle" id="compactBtn" onclick="toggleCompact()">Kompakt visning</button>
+</div>
+<div class="toolbar-row">
+<label>Kategori:</label>
+<button class="fb active" data-filter="cat" data-value="all" onclick="tf(this)">Alle</button>
+<button class="fb" data-filter="cat" data-value="frukt-og-grønt" onclick="tf(this)">🥬 Frukt & Grønt</button>
+<button class="fb" data-filter="cat" data-value="drikke-juice" onclick="tf(this)">🥤 Drikke</button>
+<button class="fb" data-filter="cat" data-value="blomster" onclick="tf(this)">💐 Blomster</button>
+<span class="filter-count" id="filterCount">Viser {total} av {total}</span>
+</div>
+<div class="toolbar-row">
+<label>Kilde:</label>
+<button class="fb active" data-filter="src" data-value="all" onclick="tf(this)">Alle</button>
+<button class="fb" data-filter="src" data-value="eu-regulering" onclick="tf(this)">🇪🇺 EU</button>
+<button class="fb" data-filter="src" data-value="fagmedia" onclick="tf(this)">📰 Fagmedia</button>
+<button class="fb" data-filter="src" data-value="lovdata-norge" onclick="tf(this)">🇳🇴 Norge</button>
+<button class="fb" data-filter="src" data-value="bransjeorganisasjon" onclick="tf(this)">🏭 Bransje</button>
+<button class="fb" data-filter="src" data-value="sosialt-fagnettverk" onclick="tf(this)">💼 LinkedIn</button>
+</div>
+<div class="toolbar-row">
+<label>Tilgang:</label>
+<button class="fb active" data-filter="access" data-value="all" onclick="tf(this)">Alle</button>
+<button class="fb" data-filter="access" data-value="open" onclick="tf(this)">🔓 Kun åpne</button>
+<button class="fb" data-filter="access" data-value="closed" onclick="tf(this)">🔒 Kun lukkede</button>
+</div>
+</div>
+<div class="articles-container" id="articlesContainer">{all_cards}</div>
+<section class="sources-section"><h2>📡 Kilder og tilgangsstatus</h2>
+<table><thead><tr><th>Kilde</th><th>Type</th><th>Tilgang</th><th>Beskrivelse</th><th>Funn</th></tr></thead>
 <tbody>{source_rows}</tbody></table></section>
-{section("Høy relevans", "🔴", high, "Direkte relevant for emballasje innen frukt/grønt, drikke og blomster.")}
-{section("Medium relevans", "🟡", medium, "Emballasjeregulering med indirekte relevans.")}
-{section("Lavere relevans", "⚪", low, "Generelle artikler om emballasje og regulering.")}
-{feedback_section}
+<section class="feedback-section"><h2>🎓 Feedback – gjør monitoren smartere</h2>
+<p class="feedback-info">Rediger <code>feedback.json</code> i docs-mappen for å trene AI-analysen:</p>
+<div class="fb-cards">
+<div class="fb-card"><strong>Instruksjoner:</strong><code>"instructions": ["Vi bruker PET og rPET for bærskåler", "Norske regler viktigere enn tyske"]</code></div>
+<div class="fb-card"><strong>Gode eksempler:</strong><code>"positive_examples": [{{"title": "PPWR reuse...", "reason": "Direkte relevant for bærskåler"}}]</code></div>
+<div class="fb-card"><strong>Irrelevante:</strong><code>"negative_examples": [{{"title": "Cosmetics packaging...", "reason": "Vi jobber ikke med kosmetikk"}}]</code></div>
+</div></section>
 </div>
-<footer>
-<p>Packaging Regulation Monitor v2.1 – Oppdatert {now}</p>
+<footer><p>Packaging Regulation Monitor v2.1 – Oppdatert {now}</p>
 <p>Kilder: {' · '.join(SOURCES.keys())}</p>
-<p style="margin-top:.5rem">Daglig kl 06:00 via GitHub Actions · AI: Claude (Anthropic) · Feedback-drevet læring</p>
-</footer>
-</body></html>"""
+<p>Daglig kl 06:00 · AI: Claude · Feedback-drevet læring</p></footer>
+<script>
+const S={{cat:'all',src:'all',access:'all'}},T={total};
+function tf(b){{S[b.dataset.filter]=b.dataset.value;document.querySelectorAll(`.fb[data-filter="${{b.dataset.filter}}"]`).forEach(x=>x.classList.remove('active'));b.classList.add('active');applyFilters()}}
+function applyFilters(){{const q=document.getElementById('searchInput').value.toLowerCase(),s=document.getElementById('sortSelect').value,c=document.getElementById('articlesContainer'),cards=Array.from(c.querySelectorAll('.card'));let v=0;cards.forEach(d=>{{let ok=true;if(S.cat!=='all'&&!(d.dataset.cats||'').includes(S.cat))ok=false;if(S.src!=='all'&&d.dataset.src!==S.src)ok=false;if(S.access!=='all'&&d.dataset.access!==S.access)ok=false;if(q&&!(d.dataset.title||'').includes(q))ok=false;d.classList.toggle('hidden',!ok);if(ok)v++}});document.getElementById('filterCount').textContent=`Viser ${{v}} av ${{T}}`;cards.sort((a,b)=>{{if(s==='date-desc')return(b.dataset.date||'0000').localeCompare(a.dataset.date||'0000');if(s==='date-asc')return(a.dataset.date||'9999').localeCompare(b.dataset.date||'9999');if(s==='score-desc')return parseInt(b.dataset.score)-parseInt(a.dataset.score);return parseInt(a.dataset.score)-parseInt(b.dataset.score)}});cards.forEach(x=>c.appendChild(x))}}
+function toggleCompact(){{document.body.classList.toggle('compact');document.getElementById('compactBtn').classList.toggle('active')}}
+function toggleCard(b){{const d=b.closest('.card').querySelector('.card-details');if(d){{const h=d.style.display==='none';d.style.display=h?'':'none';b.textContent=h?'▲':'▼'}}}}
+function copyLink(b,u){{navigator.clipboard.writeText(u).then(()=>{{b.classList.add('copied');b.textContent='✓';setTimeout(()=>{{b.classList.remove('copied');b.textContent='📋'}},2000)}})}}
+</script>
+</body></html>'''
 
     os.makedirs(os.path.dirname(output_path) if os.path.dirname(output_path) else ".", exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
@@ -1330,20 +1372,23 @@ def generate_email_html(articles, daily_summary, weekly_summary):
         date_str = a.date if a.date else "–"
         rows += f'<tr><td style="padding:8px;border-bottom:1px solid #eee;text-align:center"><span style="background:{score_color};color:#fff;padding:2px 8px;border-radius:12px;font-size:12px;font-weight:bold">{a.relevance_score}</span></td><td style="padding:8px;border-bottom:1px solid #eee">{access} <a href="{a.url}" style="color:#1a1a2e">{a.title[:80]}</a></td><td style="padding:8px;border-bottom:1px solid #eee;font-size:13px;color:#666">{a.source}</td><td style="padding:8px;border-bottom:1px solid #eee;font-size:13px;color:#666">{date_str}</td><td style="padding:8px;border-bottom:1px solid #eee;font-size:13px;color:#666">{cats}</td></tr>'
 
-    return f"""<!DOCTYPE html><html><head><meta charset="UTF-8"></head>
-<body style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;background:#f8f8f8;padding:20px">
-<div style="background:linear-gradient(135deg,#0a1628,#2d4a3e);color:#fff;padding:25px;border-radius:10px 10px 0 0">
-<h1 style="margin:0;font-size:22px">📦 Emballasjeregulering Monitor</h1>
-<p style="margin:5px 0 0;opacity:.7;font-size:14px">Daglig rapport – {now}</p></div>
-<div style="background:#fff;padding:20px;border-radius:0 0 10px 10px">
-<p style="color:#666;font-size:14px">Fant <strong>{len(articles)}</strong> artikler. <strong>{len([a for a in articles if a.relevance_score >= 60])}</strong> med høy relevans.</p>
-{summary_block}
-<h2 style="font-size:16px;border-bottom:2px solid #22763d;padding-bottom:5px;margin-top:20px">Topp {len(top)} artikler</h2>
-<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr style="background:#f8f8f8"><th style="padding:8px;text-align:center">Score</th><th style="padding:8px;text-align:left">Artikkel</th><th style="padding:8px;text-align:left">Kilde</th><th style="padding:8px;text-align:left">Dato</th><th style="padding:8px;text-align:left">Kategori</th></tr></thead><tbody>{rows}</tbody></table>
-<p style="margin-top:20px;text-align:center"><a href="$PAGES_URL" style="background:#22763d;color:#fff;padding:10px 25px;border-radius:6px;text-decoration:none;font-weight:bold">Se full rapport →</a></p>
-</div>
-<p style="text-align:center;color:#999;font-size:12px;margin-top:15px">Packaging Regulation Monitor v2.1 · Daglig kl 06:00</p>
-</body></html>"""
+    return (
+        '<!DOCTYPE html><html><head><meta charset="UTF-8"></head>'
+        '<body style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;background:#f8f8f8;padding:20px">'
+        '<div style="background:linear-gradient(135deg,#0a1628,#2d4a3e);color:#fff;padding:25px;border-radius:10px 10px 0 0">'
+        f'<h1 style="margin:0;font-size:22px">\U0001f4e6 Emballasjeregulering Monitor</h1>'
+        f'<p style="margin:5px 0 0;opacity:.7;font-size:14px">Daglig rapport \u2013 {now}</p></div>'
+        f'<div style="background:#fff;padding:20px;border-radius:0 0 10px 10px">'
+        f'<p style="color:#666;font-size:14px">Fant <strong>{len(articles)}</strong> artikler. '
+        f'<strong>{len([a for a in articles if a.relevance_score >= 60])}</strong> med h\u00f8y relevans.</p>'
+        f'{summary_block}'
+        f'<h2 style="font-size:16px;border-bottom:2px solid #22763d;padding-bottom:5px;margin-top:20px">Topp {len(top)} artikler</h2>'
+        f'<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr style="background:#f8f8f8"><th style="padding:8px;text-align:center">Score</th><th style="padding:8px;text-align:left">Artikkel</th><th style="padding:8px;text-align:left">Kilde</th><th style="padding:8px;text-align:left">Dato</th><th style="padding:8px;text-align:left">Kategori</th></tr></thead><tbody>{rows}</tbody></table>'
+        f'<p style="margin-top:20px;text-align:center"><a href="$PAGES_URL" style="background:#22763d;color:#fff;padding:10px 25px;border-radius:6px;text-decoration:none;font-weight:bold">Se full rapport \u2192</a></p>'
+        '</div>'
+        '<p style="text-align:center;color:#999;font-size:12px;margin-top:15px">Packaging Regulation Monitor v2.1</p>'
+        '</body></html>'
+    )
 
 
 # ─── Hovedprogram ────────────────────────────────────────────────────────────
