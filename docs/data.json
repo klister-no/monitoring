@@ -1,8 +1,8 @@
 {
-  "generated": "2026-03-23T07:51:29.308414",
+  "generated": "2026-03-24T07:41:37.324753",
   "count": 155,
-  "daily_summary": "**Daglig sammendrag - Emballasjeregulering**\n\nDagens scan viser at omfattende endringer i emballasjeregelverk er på vei, med ny norsk politikk for mindre unødvendig emballasje og økt ombruk som trer i kraft umiddelbart. Den nye EU-emballasjeforordningen (PPWR) som implementeres i juni 2025 vil påvirke alle våre markedssegmenter - frukt/grønt, drikke og blomster - med strengere krav til gjenvinning og utvidet produsentansvar (EPR). CEFLEX stiller kritiske spørsmål om industrien vil klare å nå de nye målene innen fristen i mars 2025.\n\n**Umiddelbar oppmerksjonhet kreves** for å forstå hvordan de nye norske retningslinjene påvirker eksisterende produktlinjer og kundekontrakter, samt forberede seg på PPWR-implementeringen neste sommer.\n\n**Anbefaling:** Sett opp møte med juridisk avdeling og produktutvikling innen denne uken for å kartlegge hvilke emballasjeløsninger som må redesignes, og start dialog med nøkkelkunder om kommende endringer i første kvartal 2025.",
-  "weekly_summary": "**SITUASJONSBILDE**: Den nye Emballasjeforordningen (PPWR) er nå offisielt vedtatt og trådte i kraft 11. februar 2025, og erstatter det gamle direktivet 94/62/EC. Dette markerer et historisk skifte i europeisk emballasjeregulering med strengere krav til reduksjon av unødvendig emballasje, økt ombruk og nye resirkuleringsmål som skal nås innen 2030.\n\n**FRUKT & GRØNT**: Nye regler vil kreve betydelig reduksjon av \"luft\" i emballasje og eliminering av unødvendig emballasje for frukt og grønt. CEFLEX-diskusjonene viser at det er store utfordringer med å nå PPWR-målene innen 2030, særlig for fleksible emballasjeløsninger som flow-wrap og MAP-pakninger. Bedrifter må nå prioritere redesign av skåler, clamshells og bæremballasje for å møte de nye effektivitetskravene.\n\n**DRIKKE**: PET-flasker og drikkekartonger vil møte skjerpede krav til materialeffektivitet og resirkulering under den nye forordningen. Implementeringsforordningene for engangsplast introduserer også nye merkekrav som påvirker våre PET-flaskeløsninger. Utvidet produsentansvar (EPR) vil øke kostnadene knyttet til søppelrydding og kreve bedre sporbarhet av emballasje gjennom verdikjeden.\n\n**BLOMSTER**: Blomsteremballasje som sleeves og innpakningsfilm omfattes også av de nye EU-kravene, med særlig fokus på reduksjon av engangsplast. Potter og andre blomsteremballasjeløsninger må vurderes mot de nye effektivitetskravene.\n\n**ANBEFALT HANDLING**: Bedriften bør umiddelbart etablere en PPWR-compliance arbeidsgruppe for å kartlegge alle produktlinjer mot de nye kravene som gjelder fra 2025. Vi må starte redesign av emballasjeløsninger som ikke møter effektivitetskravene og investere i R&D for alternative materialer. Samtidig bør vi styrke dialogen med kunder om kostnadsimplikasjonene av EPR-ordningene og posisjonere oss som en løsningsleverandør i den grønne omstillingen.",
+  "daily_summary": "**Daglig sammendrag - Emballasjeregulering**\n\nDagens scan viser at emballasjereguleringen står foran betydelige endringer, med nye EU-forordninger som trer i kraft i juni og juli 2025. Regjeringen har allerede lansert initiativ for mindre unødvendig emballasje og økt ombruk, noe som direkte påvirker alle våre markedssegmenter - frukt/grønt, drikke og blomster. EUROPEN og CEFLEX uttrykker bekymring for om industrien vil klare å oppfylle de nye målene, særlig når det gjelder resirkulering og reduksjon av emballasje.\n\n**Krever umiddelbar oppmerksomhet:** Med implementeringsfrister allerede i 2025 må bedriften raskt kartlegge hvordan de nye kravene vil påvirke eksisterende produktportefølje og produksjonsprosesser.\n\n**Anbefaling:** Sett sammen en tverrgående arbeidsgruppe som analyserer de kommende regelverksendringene og utvikler en handlingsplan for å sikre compliance innen fristene. Prioriter dialog med kunder om deres behov for bærekraftige emballasjeløsninger, da dette blir et konkurransefortrinn fremover.",
+  "weekly_summary": "",
   "sources": {
     "EUR-Lex": {
       "type": "EU/Regulering",
@@ -282,17 +282,15 @@
       "source_type": "EU/Regulering",
       "source_access": "åpen",
       "date": "",
-      "summary": "Web Content Display (Global) For a better user experience please update your browser or use Chrome or Firefox browser. × Publication Detail Actions Portlet Utilities Publication Detail Actions Portlet Add to my publications Create alert Permanent link Metadata RDF (Opens New Window) (Opens New Windo",
+      "summary": "",
       "keywords": [
         "single-use plastic"
       ],
-      "categories": [
-        "Drikke/juice"
-      ],
-      "score": 35,
-      "accessible": true,
+      "categories": [],
+      "score": 20,
+      "accessible": false,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice: SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
     },
     {
       "title": "Factsheet on single-use plastics",
@@ -2468,11 +2466,11 @@
       "date": "2025-07-01",
       "summary": "Packaging and Packaging Waste Regulation At a glance The Packaging and Packaging Waste Regulation (PPWR) has officially entered into force on 11 February 2025, replacing the Packaging and Packaging Waste Directive (PPWD) as the centerpiece of EU legislation on packaging and packaging waste. The obje",
       "keywords": [
-        "packaging and packaging waste",
         "packaging waste",
-        "beverage packaging",
+        "PPWR",
         "recycled content",
-        "PPWR"
+        "packaging and packaging waste",
+        "beverage packaging"
       ],
       "categories": [
         "Drikke/juice",
@@ -2512,9 +2510,9 @@
       "date": "2025-06-13",
       "summary": "EØS-notat\n| 13.06.2025 | EØS-notatbasen Sakstrinn Faktanotat Foreløpig posisjonsnotat Posisjonsnotat Gjennomføringsnotat Opprettet 08.02.2023 Spesialutvalg: Miljø Dato sist behandlet i spesialutvalg: Hovedansvarlig(e) departement(er): Klima- og miljødepartementet Vedlegg/protokoll i EØS-avtalen: Ved",
       "keywords": [
-        "emballasjeforordning",
+        "emballasje",
         "plastemballasje",
-        "emballasje"
+        "emballasjeforordning"
       ],
       "categories": [
         "Drikke/juice",
@@ -2557,8 +2555,8 @@
       "date": "2024-11-29",
       "summary": "Nyhet\n| Dato: 29.11.2024 | Klima- og miljødepartementet Dette innholdet er mer enn 1 år gammelt. Dei neste åra skal det bli mindre luft i pakkene du har handla på nettet, mindre plastpakka frukt og grønt og emballasjeavfallet skal bli enklare å materialgjenvinne. Når du bestiller mat for take-away, ",
       "keywords": [
-        "emballasjeforordning",
-        "emballasje"
+        "emballasje",
+        "emballasjeforordning"
       ],
       "categories": [
         "Drikke/juice",
@@ -2637,11 +2635,11 @@
       "date": "2022-11-30",
       "summary": "News 30 Nov 2022 News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive On 30 November, the European Commission published the second part of its Circular Economy package introducing, amongst others, its proposal for the revision of the Packaging and",
       "keywords": [
-        "packaging and packaging waste",
-        "compostable packaging",
         "packaging waste",
-        "recycled content",
-        "beverage packaging"
+        "single-use plastic",
+        "PPWR",
+        "compostable packaging",
+        "recycled content"
       ],
       "categories": [
         "Drikke/juice",
@@ -2741,8 +2739,8 @@
       "summary": "News 05 Apr 2021 A proposal for a revised Packaging and Packaging Waste Directive by the end of the year? The review of the Packaging and Packaging Waste Directive (PPWD) will be a major milestone this year. This revision represents a key opportunity to further scale up the circularity of the EU eco",
       "keywords": [
         "packaging waste",
-        "packaging and packaging waste",
-        "single-use plastic"
+        "single-use plastic",
+        "packaging and packaging waste"
       ],
       "categories": [
         "Frukt og grønt"
