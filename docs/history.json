@@ -1,264 +1,6 @@
 {
   "runs": [
     {
-      "date": "2026-03-19",
-      "count": 155,
-      "articles": [
-        {
-          "title": "Mindre unødvendig emballasje, meir ombruk",
-          "url": "https://www.regjeringen.no/no/aktuelt/emballasjedirektivet/id3076915/",
-          "source": "Regjeringen.no",
-          "score": 100,
-          "categories": [
-            "Frukt og grønt",
-            "Drikke/juice"
-          ],
-          "date": "2024-11-29",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Emballasjeforordningen",
-          "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2023/feb/forslag-til-forordning-om-emballasje-og-emballsjeavfall/id2978356/",
-          "source": "Regjeringen.no",
-          "score": 100,
-          "categories": [
-            "Blomster",
-            "Frukt og grønt",
-            "Drikke/juice"
-          ],
-          "date": "2025-06-13",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Regulation",
-          "url": "https://www.europen-packaging.eu/policy-area/packaging-and-packaging-waste-directive/",
-          "source": "EUROPEN",
-          "score": 100,
-          "categories": [
-            "Blomster",
-            "Frukt og grønt",
-            "Drikke/juice"
-          ],
-          "date": "2025-07-01",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive",
-          "url": "https://www.europen-packaging.eu/news/news-update-european-commission-proposal-for-the-revision-of-the-packaging-and-packaging-waste-directive/",
-          "source": "EUROPEN",
-          "score": 100,
-          "categories": [
-            "Blomster",
-            "Frukt og grønt",
-            "Drikke/juice"
-          ],
-          "date": "2022-11-30",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "EUROPEN calls for clear EPR legal framework and strong Internal Market safeguard in Packaging and Packaging Waste Directive",
-          "url": "https://www.europen-packaging.eu/news/europen-calls-for-clear-epr-legal-framework-and-strong-internal-market-safeguard-in-packaging-and-packaging-waste-directive/",
-          "source": "EUROPEN",
-          "score": 100,
-          "categories": [
-            "Blomster",
-            "Frukt og grønt",
-            "Drikke/juice"
-          ],
-          "date": "2016-05-24",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Will we hit the Packaging and Packaging Waste Regulation (PPWR) targets?",
-          "url": "https://ceflex.eu/will-we-hit-the-packaging-and-packaging-waste-regulation-ppwr-targets/",
-          "source": "CEFLEX",
-          "score": 85,
-          "categories": [
-            "Frukt og grønt"
-          ],
-          "date": "2025-03-26",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "The Packaging and Packaging Waste Regulation Negotiations Continue",
-          "url": "https://www.europen-packaging.eu/news/the-packaging-and-packaging-waste-regulation-negotiations-continue/",
-          "source": "EUROPEN",
-          "score": 75,
-          "categories": [
-            "Drikke/juice"
-          ],
-          "date": "2023-10-06",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "A proposal for a revised Packaging and Packaging Waste Directive by the end of the year?",
-          "url": "https://www.europen-packaging.eu/news/a-proposal-for-a-revised-packaging-and-packaging-waste-directive-by-the-end-of-the-year/",
-          "source": "EUROPEN",
-          "score": 75,
-          "categories": [
-            "Frukt og grønt"
-          ],
-          "date": "2021-04-05",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Report on the effectiveness of the essential requirements for packaging and packaging waste and proposals for reinforcement",
-          "url": "https://op.europa.eu/en/publication-detail/-/publication/05a3dace-8378-11ea-bf12-01aa75ed71a1",
-          "source": "EU Environment",
-          "score": 70,
-          "categories": [
-            "Blomster",
-            "Drikke/juice"
-          ],
-          "date": "",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Directive: What’s new?",
-          "url": "https://www.europen-packaging.eu/news/packaging-and-packaging-waste-directive-whats-new/",
-          "source": "EUROPEN",
-          "score": 65,
-          "categories": [
-            "Drikke/juice"
-          ],
-          "date": "2022-04-14",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Regulation 2025/40 (PPWR)",
-          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202500040&pk_campaign=todays_OJ&pk_source=EUR-Lex&pk_medium=X&pk_content=Environment&pk_keyword=Regulation",
-          "source": "EU Environment",
-          "score": 60,
-          "categories": [],
-          "date": "",
-          "accessible": false,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Poland’s draft bill on Packaging and Packaging Waste outlines the future implementation of a state-run model for packaging EPR",
-          "url": "https://www.europen-packaging.eu/news/polands-draft-bill-on-packaging-and-packaging-waste-outlines-the-future-implementation-of-a-state-run-model-for-packaging-epr/",
-          "source": "EUROPEN",
-          "score": 60,
-          "categories": [],
-          "date": "2025-09-03",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Regulation (PPWR): What’s on the horizon?",
-          "url": "https://www.europen-packaging.eu/news/packaging-and-packaging-waste-regulation-ppwr-whats-on-the-horizon/",
-          "source": "EUROPEN",
-          "score": 60,
-          "categories": [],
-          "date": "2024-07-08",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Review of the Packaging and Packaging Waste Directive, what’s new?",
-          "url": "https://www.europen-packaging.eu/news/review-of-the-packaging-and-packaging-waste-directive-whats-new/",
-          "source": "EUROPEN",
-          "score": 55,
-          "categories": [
-            "Drikke/juice"
-          ],
-          "date": "2021-07-05",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "One step closer to the revision of the Packaging and Packaging Waste Directive",
-          "url": "https://www.europen-packaging.eu/news/one-step-closer-to-the-revision-of-the-packaging-and-packaging-waste-directive/",
-          "source": "EUROPEN",
-          "score": 50,
-          "categories": [],
-          "date": "2021-10-07",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Directive 94/62/EC (PPWD)",
-          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A31994L0062",
-          "source": "EU Environment",
-          "score": 40,
-          "categories": [],
-          "date": "",
-          "accessible": false,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Find more information on the implementation of the Packaging and Packaging Waste Regulation here, including details of national competent authorities.",
-          "url": "https://green-forum.ec.europa.eu/packaging-and-packaging-waste-regulation-implementation_en",
-          "source": "EU Environment",
-          "score": 40,
-          "categories": [],
-          "date": "",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Directive (1994)",
-          "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01994L0062-20150526",
-          "source": "EU Environment",
-          "score": 40,
-          "categories": [],
-          "date": "",
-          "accessible": false,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging and Packaging Waste Directive",
-          "url": "https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng",
-          "source": "EU Environment",
-          "score": 40,
-          "categories": [],
-          "date": "",
-          "accessible": false,
-          "ai_summary": "",
-          "ai_impact": ""
-        },
-        {
-          "title": "Packaging value chain calls on the European Commission to dedicate appropriate time and resources to review of the Packaging and Packaging Waste Directive",
-          "url": "https://www.europen-packaging.eu/news/packaging-value-chain-calls-on-the-european-commission-to-dedicate-appropriate-time-and-resources-to-review-of-the-packaging-and-packaging-waste-directive/",
-          "source": "EUROPEN",
-          "score": 40,
-          "categories": [],
-          "date": "2021-04-16",
-          "accessible": true,
-          "ai_summary": "",
-          "ai_impact": ""
-        }
-      ]
-    },
-    {
       "date": "2026-03-20",
       "count": 155,
       "articles": [
@@ -8186,6 +7928,300 @@
           "score": 40,
           "categories": [],
           "date": "2021-04-16",
+          "accessible": true,
+          "ai_summary": "",
+          "ai_impact": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "count": 166,
+      "articles": [
+        {
+          "title": "European Parliament and Council Directive 94/62/EC of 20 December 1994 onpackagingandpackagingwaste",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:31994L0062&qid=1776491070590&rid=1",
+          "source": "EUR-Lex",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Drikke/juice"
+          ],
+          "date": "",
+          "accessible": true,
+          "ai_summary": "Dette er det originale EU-direktivet 94/62/EC fra 1994 om emballasje og emballasjeavfall. Direktivet etablerte de første felles europeiske reglene for emballasje og avfallshåndtering.",
+          "ai_impact": "Som det opprinnelige grunnlaget for emballasjeregulering påvirket dette direktivet alle emballasjetyper bedriften produserer. Det la fundamentet for krav om resirkulering og avfallsreduksjon som forts"
+        },
+        {
+          "title": "Regulation(EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 onpackagingandpackagingwaste, amendingRegulation(EU) 2019/1020 and Directive (EU) 2019/904, and repealing Directive 94/62/EC (Text with EEA relevance)",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32025R0040&qid=1776491070590&rid=2",
+          "source": "EUR-Lex",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-01-22",
+          "accessible": true,
+          "ai_summary": "Den nye PPWR (forordning 2025/40) som trådte i kraft 22. januar 2025. Denne forordningen erstatter det gamle direktivet 94/62/EC og innfører strengere krav til emballasje og emballasjeavfall i hele EU",
+          "ai_impact": "Dette får stor direkte innvirkning på bedriften. Alle produkter må oppfylle nye resirkuleringskrav innen 2030, økt bruk av resirkulert materiale, begrensninger på unødvendig emballasje og krav om gjen"
+        },
+        {
+          "title": "Regulation (EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 onpackagingandpackagingwaste, amending Regulation (EU) 2019/1020 andDirective(EU) 2019/904, and repealingDirective94/62/EC (Text with EEA relevance)",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32025R0040&qid=1776491074781&rid=2",
+          "source": "EUR-Lex",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-01-22",
+          "accessible": true,
+          "ai_summary": "Dette er samme dokument som artikkel 2 - PPWR forordning 2025/40 som erstatter det gamle emballasjeavfallsdirektivet. Forordningen harmoniserer reglene på tvers av alle EU-land.",
+          "ai_impact": "Identisk innvirkning som artikkel 2. Bedriften må tilpasse hele produktporteføljen til de nye kravene om resirkulerbarhet, resirkulert innhold og minimering av emballasje på tvers av alle produktkateg"
+        },
+        {
+          "title": "Packaging and Packaging Waste Regulation 2025/40",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202500040&pk_campaign=todays_OJ&pk_source=EUR-Lex&pk_medium=X&pk_content=Environment&pk_keyword=Regulation",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-01-22",
+          "accessible": true,
+          "ai_summary": "En oversikt over den nye PPWR forordning 2025/40 som nå er gjeldende rett. Dokumentet bekrefter at forordningen har trådt i kraft og erstatter tidligere direktiv.",
+          "ai_impact": "Samme innvirkning som foregående PPWR-artikler. Bedriften må implementere nye design-for-resirkulering kriterier, øke andelen resirkulert materiale og redusere unødvendig emballasje for alle produktli"
+        },
+        {
+          "title": "Facts about packaging and packaging waste",
+          "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste/facts-about-new-eu-rules-packaging-and-packaging-waste_en",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Drikke/juice"
+          ],
+          "date": "",
+          "accessible": true,
+          "ai_summary": "Faktaark om PPWR som forklarer hovedmålene: kutte emballasjeavfall, gjøre all emballasje resirkulerbar innen 2030, øke andelen resirkulert materiale, begrense unødvendig emballasje og fremme sirkulære",
+          "ai_impact": "Bedriften må redesigne produkter for å oppfylle resirkuleringskrav innen 2030, øke bruk av resirkulerte materialer i alle produktkategorier, og vurdere gjenbruksløsninger. Dette påvirker særlig komple"
+        },
+        {
+          "title": "Packaging and Packaging Waste Directive 94/62/EC (PPWD)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A31994L0062",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Drikke/juice"
+          ],
+          "date": "",
+          "accessible": true,
+          "ai_summary": "Referanse til det opprinnelige emballasjeavfallsdirektivet 94/62/EC som nå er erstattet av PPWR. Dette var det tidligere regelverket som gjaldt frem til 2025.",
+          "ai_impact": "Begrenset direkte innvirkning siden dette direktivet nå er erstattet av PPWR. Bedriften bør fokusere på de nye kravene i PPWR fremfor de gamle direktivbestemmelsene, men kan bruke dette som referanse "
+        },
+        {
+          "title": "Packaging and Packaging Waste Directive (1994)",
+          "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01994L0062-20150526",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "",
+          "accessible": true,
+          "ai_summary": "Den konsoliderte versjonen av det opprinnelige emballasjeavfallsdirektivet fra 1994, oppdatert frem til 2015. Dette dokumentet viser den historiske utviklingen av emballasjeregulering.",
+          "ai_impact": "Minimal direkte innvirkning siden regelverket nå er erstattet av PPWR. Bedriften kan bruke dette historisk for å forstå hvordan kravene har utviklet seg, men må fokusere på å implementere de nye PPWR-"
+        },
+        {
+          "title": "Single-use plastics Directive",
+          "url": "https://eur-lex.europa.eu/eli/dir/2019/904/oj",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2019-06-12",
+          "accessible": true,
+          "ai_summary": "SUP-direktivet (2019/904) om reduksjon av engangsplastprodukter og deres miljøpåvirkning. Dette direktivet forbyr eller begrenser spesifikke engangsplastprodukter og krever merking.",
+          "ai_impact": "Stor innvirkning på plastbaserte produkter. Bedriften må sikre at plastflasker, plastskåler og clamshells ikke faller inn under forbudte kategorier, samt implementere riktig merking på engangsplastpro"
+        },
+        {
+          "title": "Packaging and Packaging Waste Directive",
+          "url": "https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-01-22",
+          "accessible": true,
+          "ai_summary": "Enda en referanse til PPWR forordning 2025/40 som har trådt i kraft. Dette bekrefter at det nye regelverket nå gjelder på tvers av EU/EØS.",
+          "ai_impact": "Samme betydelige innvirkning som tidligere PPWR-artikler. Bedriften må akselerere implementeringen av de nye kravene til resirkulerbarhet, resirkulert innhold og emballasjeminimering på tvers av alle "
+        },
+        {
+          "title": "Implementing regulation laying down rules on harmonised marking specifications on single-use plastic products listed in Part D of the Annex to the Directive",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R2151",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Drikke/juice"
+          ],
+          "date": "2020-12-18",
+          "accessible": true,
+          "ai_summary": "Implementeringsforordning 2020/2151 som fastsetter harmoniserte merkingsspesifikasjoner for engangsplastprodukter listet i SUP-direktivet. Dette regulerer hvordan produkter skal merkes.",
+          "ai_impact": "Direkte innvirkning på plastprodukter som krever merking. Bedriften må sikre riktig merking av plastflasker, plastskåler og andre engangsplastprodukter i henhold til de spesifiserte kravene, inkludert"
+        },
+        {
+          "title": "Commission guidelines laying down criteria on the costs of cleaning up litter in accordance with the Directive on Single-use Plastics",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52025XC05646&qid=1761641812461",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-10-24",
+          "accessible": true,
+          "ai_summary": "Kommisjonens retningslinjer for 2025 om kriterier for kostnader ved opprydding av søppel i henhold til SUP-direktivet. Dette gjelder produsentansvar for oppryddingskostnader.",
+          "ai_impact": "Potensiell økonomisk innvirkning gjennom utvidet produsentansvar. Bedriften kan bli pålagt å bidra til kostnadene ved opprydding av søppel fra sine plastprodukter, særlig drikkebeholdere og plastskåle"
+        },
+        {
+          "title": "Commission guidelines on single-use plastic products in accordance with the Directive on Single-use Plastics",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.216.01.0001.01.ENG&toc=OJ%3AC%3A2021%3A216%3ATOC",
+          "source": "EU Environment",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2021-06-07",
+          "accessible": true,
+          "ai_summary": "Kommisjonens veiledning fra 2021 om engangsplastprodukter i henhold til SUP-direktivet. Dokumentet gir tolkningsretningslinjer for hvilke produkter som omfattes av direktivet.",
+          "ai_impact": "Viktig for å forstå hvilke produkter som omfattes av SUP-direktivet. Bedriften må bruke denne veiledningen til å klassifisere sine plastprodukter korrekt og sikre at de overholder relevante forbud, be"
+        },
+        {
+          "title": "Emballasjeforordningen",
+          "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2023/feb/forslag-til-forordning-om-emballasje-og-emballsjeavfall/id2978356/",
+          "source": "Regjeringen.no",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-06-13",
+          "accessible": true,
+          "ai_summary": "EØS-notat fra norske myndigheter om emballasjeforordningen (PPWR) datert juni 2025. Dokumentet bekrefter at Norge vil implementere forordningen og delta i ekspertgrupper.",
+          "ai_impact": "Bekrefter at PPWR vil gjelde fullt ut i Norge som del av EØS-avtalen. Bedriften må forberede seg på implementering av alle PPWR-krav i det norske markedet, med samme tidsfrister og krav som resten av "
+        },
+        {
+          "title": "Packaging and Packaging Waste Regulation",
+          "url": "https://www.europen-packaging.eu/policy-area/packaging-and-packaging-waste-directive/",
+          "source": "EUROPEN",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2025-07-01",
+          "accessible": true,
+          "ai_summary": "EUROPEN (bransjeorganisasjon) sin oversikt over PPWR som trådte i kraft 11. februar 2025. Artikkelen bekrefter resirkuleringskrav fra 2030 og \"recyclability at scale\"-krav fra 2035.",
+          "ai_impact": "Kritisk informasjon om implementeringstidslinjer. Bedriften har frem til januar 2030 for å sikre at alle produkter oppfyller design-for-resirkulering kriterier, og frem til 2035 for \"recyclability at "
+        },
+        {
+          "title": "News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive",
+          "url": "https://www.europen-packaging.eu/news/news-update-european-commission-proposal-for-the-revision-of-the-packaging-and-packaging-waste-directive/",
+          "source": "EUROPEN",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2022-11-30",
+          "accessible": true,
+          "ai_summary": "EUROPEN sin oppdatering fra november 2022 om Europakommisjonens forslag til revisjon av emballasjedirektivet, som senere ble til PPWR. Artikkelen forklarer overgangen fra direktiv til forordning.",
+          "ai_impact": "Historisk perspektiv på utviklingen mot PPWR. Begrenset direkte innvirkning siden dette var fra forslags-stadiet, men bekrefter at harmoniseringen på tvers av medlemsland nå er komplett, noe som foren"
+        },
+        {
+          "title": "EUROPEN calls for clear EPR legal framework and strong Internal Market safeguard in Packaging and Packaging Waste Directive",
+          "url": "https://www.europen-packaging.eu/news/europen-calls-for-clear-epr-legal-framework-and-strong-internal-market-safeguard-in-packaging-and-packaging-waste-directive/",
+          "source": "EUROPEN",
+          "score": 100,
+          "categories": [
+            "Frukt og grønt",
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "2016-05-24",
+          "accessible": true,
+          "ai_summary": "",
+          "ai_impact": ""
+        },
+        {
+          "title": "The Packaging and Packaging Waste Regulation Negotiations Continue",
+          "url": "https://www.europen-packaging.eu/news/the-packaging-and-packaging-waste-regulation-negotiations-continue/",
+          "source": "EUROPEN",
+          "score": 75,
+          "categories": [
+            "Drikke/juice"
+          ],
+          "date": "2023-10-06",
+          "accessible": true,
+          "ai_summary": "",
+          "ai_impact": ""
+        },
+        {
+          "title": "A proposal for a revised Packaging and Packaging Waste Directive by the end of the year?",
+          "url": "https://www.europen-packaging.eu/news/a-proposal-for-a-revised-packaging-and-packaging-waste-directive-by-the-end-of-the-year/",
+          "source": "EUROPEN",
+          "score": 75,
+          "categories": [
+            "Frukt og grønt"
+          ],
+          "date": "2021-04-05",
+          "accessible": true,
+          "ai_summary": "",
+          "ai_impact": ""
+        },
+        {
+          "title": "Report on the effectiveness of the essential requirements for packaging and packaging waste and proposals for reinforcement",
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/05a3dace-8378-11ea-bf12-01aa75ed71a1",
+          "source": "EU Environment",
+          "score": 70,
+          "categories": [
+            "Blomster",
+            "Drikke/juice"
+          ],
+          "date": "",
+          "accessible": true,
+          "ai_summary": "",
+          "ai_impact": ""
+        },
+        {
+          "title": "Packaging and Packaging Waste Directive: What’s new?",
+          "url": "https://www.europen-packaging.eu/news/packaging-and-packaging-waste-directive-whats-new/",
+          "source": "EUROPEN",
+          "score": 65,
+          "categories": [
+            "Drikke/juice"
+          ],
+          "date": "2022-04-14",
           "accessible": true,
           "ai_summary": "",
           "ai_impact": ""
