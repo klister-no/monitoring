@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-18T08:13:08.906336",
-  "count": 51,
-  "daily_summary": "**Daglig emballasjesammendrag - Nordisk marked**\n\nDagens scan viser en klar intensivering av regulatoriske krav innen emballasje, med særlig fokus på plastreduksjon og sirkulær økonomi. Den kommende emballasjeforordningen (juni 2025) vil påvirke alle våre kundesegmenter - blomster, drikke/juice og frukt/grønt - og krever umiddelbar oppmerksomhet for å sikre compliance. Samtidig ser vi positive teknologiske fremskritt med nye europeiske standarder for resirkulerbar fleksibel plastemballasje og innovative renseteknologier som superkritisk CO₂-rensing.\n\nDet mest presserende er å forberede seg på de kommende produsentansvarsordningene der plastprodusenter må betale for opprydding fra desember 2025, samt økte krav til ombruk og redusert unødvendig emballasje. \n\n**Anbefaling:** Prioriter å etablere en tverrfaglig arbeidsgruppe som kan kartlegge produktporteføljen mot de nye kravene, identifisere alternative materialer og teknologier, og utvikle en handlingsplan for compliance innen emballasjeforordningen trer i kraft neste år.",
-  "weekly_summary": "**SITUASJONSBILDE**: Den nye EU-forordningen om emballasje og emballasjeavfall (PPWR 2025/40) har trådt i kraft og erstatter det gamle direktivet fra 1994, noe som markerer det største regulatoriske skiftet på emballasjeområdet på 30 år. Samtidig jobber norske myndigheter med implementering av tiltak for mindre unødvendig emballasje og mer ombruk, som vil få direkte konsekvenser for alle våre forretningsområder.\n\n**FRUKT & GRØNT**: For frukt- og grøntsegmentet innebærer de nye reglene strengere krav til gjenvinning og redusert plastbruk, hvilket påvirker våre MAP-pakninger og clamshells betydelig. Vi må forberede oss på økte kostnader knyttet til opprydding av plastmateriale og strengere merkingskrav for engangsplastprodukter i denne kategorien. Skålene og bæreemballasjen vår må redesignes for å møte de nye designkravene for sirkulær økonomi.\n\n**DRIKKE**: Drikkeemballasje rammes særlig hardt av både PPWR-forordningen og SUP-direktivet, med strenge restriksjoner på engangsplast og økte ansvarskostnader for produsentene. PET-flaskene våre må oppfylle nye harmoniserte merkingskrav, mens kartong- og boksløsningene får konkurransefordeler som mer bærekraftige alternativer. Superkritisk CO₂-renseteknologi fremheves som en lovende løsning for bedre resirkulering av plastmaterialer.\n\n**BLOMSTER**: Blomsteremballasje påvirkes av de samme plastrestriksjoner, særlig sleeves og innpakningsfilm som må oppfylle nye design-for-resirkulering standarder. Pottemarkedet kan få konkurransefordeler som mer varig emballasjeløsning.\n\n**ANBEFALT HANDLING**: Vi bør umiddelbart etablere en tverrfaglig arbeidsgruppe for å kartlegge hvilke av våre produkter som må redesignes innen de kommende tidsfrister i PPWR-forordningen. Det er kritisk å starte dialogen med våre kunder om kostnadsimplikasjonene og alternative løsninger, særlig for plastintensive produkter. Vi anbefaler også å investere i kompetanse innen superkritisk CO₂-teknologi og andre innovative resirkuleringsteknologier for å posisjonere oss som en fremtidsrettet partner.",
+  "generated": "2026-05-19T07:54:57.215701",
+  "count": 163,
+  "daily_summary": "**Daglig emballasjesammendrag - Nordisk marked**\n\nDagens scanning viser at emballasjereguleringer er i kraftig endring, med særlig fokus på EU's nye emballasjeforordning som trer i kraft i 2025-2026. Den norske regjeringen har nylig publisert retningslinjer for redusert unødvendig emballasje og økt ombruk, som direkte påvirker våre hovedsegmenter innen frukt/grønt og drikke. EUROPEN fortsetter å lobbye for klarere EPR-rammeverk (Extended Producer Responsibility), noe som kan få betydelige kostnadsimplikasjoner for emballasjeprodusenter.\n\n**Umiddelbar oppmerksomhet kreves** for å forstå hvordan de nye norske retningslinjene fra november 2024 påvirker våre eksisterende produktlinjer, spesielt for engangsemballasje til drikke- og grøntsektoren.\n\n**Anbefaling:** Sett opp møte med juridisk avdeling denne uken for å gjennomgå compliance-krav, og start dialog med største kunder om kommende endringer i emballasjekrav. Vi bør også vurdere å styrke vårt bærekraftsortiment og ombruksløsninger som forberedelse til skjerpede reguleringer.",
+  "weekly_summary": "",
   "sources": {
     "EUR-Lex": {
       "type": "EU/Regulering",
@@ -58,7 +58,7 @@
       "access": "delvis åpen",
       "description": "European Organisation for Packaging – pressemeldinger åpne, rapporter for medlemmer",
       "url": "https://europen-packaging.eu",
-      "article_count": 0
+      "article_count": 112
     },
     "CEFLEX": {
       "type": "Bransjeorganisasjon",
@@ -101,13 +101,13 @@
       "source_type": "EU/Regulering",
       "source_access": "åpen",
       "date": "",
-      "summary": "Cutting down packaging waste means cleaner streets and nature, less plastic in our seas, and fewer overflowing bins in our neighborhoods. It can save our precious resources, reduce the cost of managing waste, and reduce greenhouse gasses. Using less packaging is good for the planet, but also for our",
+      "summary": "Artikkelen forklarer grunnleggende fakta om PPWR (Packaging and Packaging Waste Regulation) som skal gjøre emballasje mer miljøvennlig i Europa. Regelverket krever at all emballasje skal være resirkulerbar innen 2030, øke bruken av resirkulerte materialer og redusere unødvendig emballasje.",
       "keywords": [
-        "plastic packaging",
-        "packaging waste",
-        "single-use plastic",
         "PPWR",
-        "packaging and packaging waste"
+        "recycled content",
+        "single-use plastic",
+        "packaging and packaging waste",
+        "plastic packaging"
       ],
       "categories": [
         "Drikke/juice"
@@ -115,7 +115,7 @@
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
+      "impact": "Bedriften må redesigne all emballasje for frukt, grønnsaker, drikke og blomster for å oppfylle resirkulerbarhetskrav innen 2030. Dette krever investering i nye materialer og design, samt økt bruk av resirkulerte materialer i produksjonen. Kravene om mindre unødvendig emballasje kan påvirke størrelse og design av skåler, flasker og blomsteremballasje."
     },
     {
       "title": "Packaging and Packaging Waste Directive 94/62/EC (PPWD)",
@@ -142,16 +142,16 @@
       "source_type": "EU/Regulering",
       "source_access": "åpen",
       "date": "",
-      "summary": "Business and Biodiversity The EU Business & Biodiversity Platform fosters dialogue on business–biodiversity links at the EU level.",
+      "summary": "Artikkelen inneholder minimal informasjon, kun en kort referanse til EU Business & Biodiversity Platform som fremmer dialog om forretning-biodiversitet-forbindelser på EU-nivå.",
       "keywords": [
-        "packaging waste",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "packaging waste"
       ],
       "categories": [],
       "score": 40,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+      "impact": "Begrenset direkte påvirkning på emballasjeproduksjon, men kan signalisere økt fokus på biodiversitetshensyn i emballasjevalg. Dette kan påvirke materialvalg og bærekraftighetskrav for emballasje til alle produktkategorier."
     },
     {
       "title": "Report on the effectiveness of the essential requirements for packaging and packaging waste and proposals for reinforcement",
@@ -329,26 +329,106 @@
       "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
     },
     {
+      "title": "Plastpelletsforordningen",
+      "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2024/jan/forebygging-tap-av-plastpellets/id3033110/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Flere bedrifter vil kutte plastprodukter",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastpartnerskap2/id3155944/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
       "title": "Miljøavtale om plastprodukter",
       "url": "https://www.regjeringen.no/no/dokumenter/miljoavtale-om-plastprodukter/id2702585/",
       "source": "Regjeringen.no",
       "source_type": "Lovdata/Norge",
       "source_access": "åpen",
       "date": "",
-      "summary": "Rapport\n| Dato: 01.04.2020 | Klima- og miljødepartementet Rapport med anbefalte tiltak fra arbeidsgruppe opprettet av Klima- og miljødepartementet. Last ned rapporten (pdf) Sammendrag Regjeringen ønsker å redusere miljøkonsekvensene av engangsprodukter i plast og opprettet 15.05.2019 en arbeidsgrupp",
+      "summary": "",
       "keywords": [
-        "emballasje",
-        "engangsplast",
-        "plastemballasje"
+        "emballasje"
       ],
-      "categories": [
-        "Drikke/juice",
-        "Frukt og grønt"
-      ],
-      "score": 80,
+      "categories": [],
+      "score": 0,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice, Frukt og grønt: Krav til resirkulert innhold. Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Produsenter av plastprodukter må betale for opprydding",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastprodusenter-ma-betale/id3141266/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Invitasjon til pressen: Signerer avtale om plastpartnerskap med næringslivet",
+      "url": "https://www.regjeringen.no/no/aktuelt/signerer-avtale-om-plastpartnerskap-med-naringslivet/id3031686/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Ingen plastavtale nå",
+      "url": "https://www.regjeringen.no/no/aktuelt/ingen-plastavtale-na/id3116009/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
     },
     {
       "title": "Enighet om direktiv som skal redusere negative miljøeffekter fra plastprodukter",
@@ -357,19 +437,83 @@
       "source_type": "Lovdata/Norge",
       "source_access": "åpen",
       "date": "",
-      "summary": "Rapport\n| Dato: 21.01.2019 | Utenriksdepartementet Rapport fra miljøråd Hege Rooth Olbergsveen, EU-delegasjonen. EU-landene støtter enighet fra forhandlingene om EU-direktivet som skal redusere negative miljøeffekter fra engangsplast, fiskeri- og oppdrettsutstyr i plast og produkter laget av oxo-ned",
+      "summary": "",
       "keywords": [
-        "emballasje",
-        "engangsplast"
+        "emballasje"
       ],
-      "categories": [
-        "Drikke/juice",
-        "Frukt og grønt"
-      ],
-      "score": 85,
+      "categories": [],
+      "score": 0,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice, Frukt og grønt: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Nye merkekrav. Utvidet produsentansvar – kostnadsøkning."
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Inngår plastpartnerskap med næringslivet",
+      "url": "https://www.regjeringen.no/no/aktuelt/inngar-plastpartnerskap-med-naringslivet/id3031748/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Presseinformasjon: Akkreditering til siste møtet i plastforhandlingene (INC-5)",
+      "url": "https://www.regjeringen.no/no/aktuelt/akkreditering-til-siste-motet-i-plastforhandlingene-inc-5/id3066929/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Vil forhandle fram en global plastavtale",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastforhandlinger2/id3115436/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "PRESSEINFORMASJON: Akkreditering til plastforhandlingene stenger snart",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastforhandlinger/id3109996/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
     },
     {
       "title": "Meld. St. 45 (2016–2017) - Avfall som ressurs  – avfallspolitikk og sirkulær økonomi",
@@ -491,6 +635,1691 @@
       "impact": "Generell relevans for generelt emballasje."
     },
     {
+      "title": "PPWR Conformity Assessment Toolkit",
+      "url": "https://ppwrcatoolkit-europen.eu/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "About Packaging",
+      "url": "https://www.europen-packaging.eu/about-packaging/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Single Use Plastics Directive",
+      "url": "https://www.europen-packaging.eu/policy-area/single-use-plastics-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging With Purpose",
+      "url": "https://www.europen-packaging.eu/packaging-with-purpose/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Unwrapping PPWR",
+      "url": "https://www.europen-packaging.eu/unwrapping-ppwr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "EUROPEN launches PPWR Conformity Assessment Toolkit",
+      "url": "https://www.europen-packaging.eu/news/europen-launches-ppwr-conformity-assessment-toolkit/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging News — April 2026",
+      "url": "https://www.europen-packaging.eu/news/4829/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "PPWR: Habemus Guidance (and FAQ)",
+      "url": "https://www.europen-packaging.eu/news/ppwr-habemus-guidance-and-faq/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Industry Calls for Urgent EU Dialogue as PPWR Guidance Leaves Critical Gaps",
+      "url": "https://www.europen-packaging.eu/news/industry-calls-for-urgent-eu-dialogue-as-ppwr-guidance-leaves-critical-gaps/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging News — December 2025",
+      "url": "https://www.europen-packaging.eu/news/4660/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Transforming EPR: The future of circular packaging",
+      "url": "https://www.europen-packaging.eu/news/transforming-epr-the-future-of-circular-packaging/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: Utvidet produsentansvar – kostnadsøkning."
+    },
+    {
+      "title": "PPWR: The clock is ticking",
+      "url": "https://www.europen-packaging.eu/news/ppwr-the-clock-is-ticking/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "EUROPEN reaction to leaked draft PPWR Legal Notice",
+      "url": "https://www.europen-packaging.eu/news/europen-reaction-to-leaked-draft-ppwr-legal-notice/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging Industry Calls for Ambitious 28th Legal Regime to Advance EU Competitiveness",
+      "url": "https://www.europen-packaging.eu/news/packaging-industry-calls-for-ambitious-28th-legal-regime-to-advance-eu-competitiveness/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Slovakia’s proposed amendment to the Environmental Fund Act raises major concerns for the packaging value chain",
+      "url": "https://www.europen-packaging.eu/news/slovakias-proposed-amendment-to-the-environmental-fund-act-raises-major-concerns-for-the-packaging-value-chain/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News – October 2025",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-october-2025/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Waste Framework Directive (targeted) review completed",
+      "url": "https://www.europen-packaging.eu/news/waste-framework-directive-targeted-review-completed/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — July 2025",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-july-2025/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Green Claims Directive on Hold: Turning Point or Temporary Pause?",
+      "url": "https://www.europen-packaging.eu/news/green-claims-directive-on-hold-turning-point-or-temporary-pause/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "EUROPEN launches an interactive PPWR Guidebook to help businesses navigate the PPWR!",
+      "url": "https://www.europen-packaging.eu/news/europen-launches-interactive-ppwr-guidebook-to-help-businesses-navigate-the-ppwr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Industry call for clarity and quality in Green Claims Directive negotiations",
+      "url": "https://www.europen-packaging.eu/news/industry-call-for-clarity-and-quality-in-green-claims-directive-negotiations/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — May 2025",
+      "url": "https://www.europen-packaging.eu/news/4042/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Green Claims Directive: Ongoing trilogues",
+      "url": "https://www.europen-packaging.eu/news/green-claims-directive-ongoing-trilogues/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Waste Framework Directive: Targeted Revision",
+      "url": "https://www.europen-packaging.eu/news/waste-framework-directive-targeted-revision/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Businesses call on the EU co-legislators to clarify, harmonise and simplify the Green Claims Directive to ensure the adoption of a framework safeguarding businesses’ competitiveness",
+      "url": "https://www.europen-packaging.eu/news/businesses-call-on-the-eu-co-legislators-to-clarify-harmonise-and-simplify-the-green-claims-directive-to-ensure-the-adoption-of-a-framework-safeguarding-businesses-competitiveness/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Unwrapping PPWR… to the finishing line!",
+      "url": "https://www.europen-packaging.eu/news/unwrapping-ppwr-to-the-finishing-line/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging News — December 2024",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-december-2024/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Commission Releases FAQ on Ecodesign for Sustainable Products Regulation (ESPR)",
+      "url": "https://www.europen-packaging.eu/news/information-note-on-the-ecodesign-for-sustainable-products-regulation-faq/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — October 2024",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-october-2024/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — July 2024",
+      "url": "https://www.europen-packaging.eu/news/europen-newsletter-july-2024/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Industry associations call on the Council of the European Union to establish a certain and pragmatic framework under the Green Claims Directive",
+      "url": "https://www.europen-packaging.eu/news/industry-associations-call-on-the-council-of-the-european-union-to-establish-a-certain-and-pragmatic-framework-under-the-green-claims-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Unwrapping PPWR: Interinstitutional agreement",
+      "url": "https://www.europen-packaging.eu/news/unwrapping-ppwr-interinstitutional-agreement/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging News — April 2024",
+      "url": "https://www.europen-packaging.eu/news/europen-newsletter-april-2024/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Green Claims Directive: State-of-play & Interplay with Packaging Rules",
+      "url": "https://www.europen-packaging.eu/news/green-claims-directive-state-of-play-interplay-with-packaging-rules/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Waste Framework Directive: Negotiations Pending",
+      "url": "https://www.europen-packaging.eu/news/waste-framework-directive-negotiations-pending/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "EU negotiators reach provisional agreement on PPWR",
+      "url": "https://www.europen-packaging.eu/news/eu-negotiators-reach-provisional-agreement-on-ppwr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Industry Statement: Enable the Green Transition with a harmonised, reliable and workable framework for Green Claims Directive",
+      "url": "https://www.europen-packaging.eu/news/https-www-europen-packaging-eu-wp-content-uploads-2024-02-industry-statement-on-gcd-pdf/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Joint industry statement calling for thoughtful and science-based reuse policies in the transport packaging sector",
+      "url": "https://www.europen-packaging.eu/news/joint-industry-statement-calling-for-thoughtful-and-science-based-reuse-policies-in-the-transport-packaging-sector/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: Gjenbrukskrav – påvirker logistikk og design."
+    },
+    {
+      "title": "Unwrapping PPWR: European Parliament and Council negotiating positions",
+      "url": "https://www.europen-packaging.eu/news/unwrapping-the-ppwr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Work to amend the Waste Framework Directive continues",
+      "url": "https://www.europen-packaging.eu/news/work-to-amend-the-waste-framework-directive-continues/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — December 2023",
+      "url": "https://www.europen-packaging.eu/news/europen-newsletter-december-2023-2/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Over 100 associations warn current PPWR approach risks unravelling the Single Market and setting the clock back on the Green Deal",
+      "url": "https://www.europen-packaging.eu/news/over-100-associations-warn-current-ppwr-approach-risks-unravelling-the-single-market-and-setting-the-clock-back-on-the-green-deal/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging News — October 2023",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-october-2023/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — July 2023",
+      "url": "https://www.europen-packaging.eu/news/europen-newsletter-july-2023/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — May 2023",
+      "url": "https://www.europen-packaging.eu/news/europen-newsletter-may-2023/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "The PPWR: Where do we stand?",
+      "url": "https://www.europen-packaging.eu/news/the-ppwr-where-do-we-stand/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Packaging News — December 2022",
+      "url": "https://www.europen-packaging.eu/news/europen-newsletter-december-2022/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Update on the Waste Framework Directive review",
+      "url": "https://www.europen-packaging.eu/news/update-on-the-waste-framework-directive-review/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — October 2022",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-october-2022/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging industry calls for recognition of packaging role for the resilience of essential supply chains",
+      "url": "https://www.europen-packaging.eu/news/packaging-industry-calls-for-recognition-of-packaging-role-for-the-resilience-of-essential-supply-chains/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "What you should know about the Waste Framework Directive review",
+      "url": "https://www.europen-packaging.eu/news/what-you-should-know-about-the-waste-framework-directive-review/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — July 2022",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-july-2022/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "The Waste Framework Directive review is in motion",
+      "url": "https://www.europen-packaging.eu/news/the-waste-framework-review-is-in-motion/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — April 2022",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-april-2022/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Publication of the long-awaited Waste Shipment Regulation proposal",
+      "url": "https://www.europen-packaging.eu/news/publication-of-the-long-awaited-waste-shipment-regulation-proposal/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "The packaging industry advocates for the creation of an EU harmonised model for consumer sorting instructions",
+      "url": "https://www.europen-packaging.eu/news/the-packaging-industry-advocates-for-the-creation-of-an-eu-harmonised-model-for-consumer-sorting-instructions/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: Nye merkekrav."
+    },
+    {
+      "title": "Packaging News — December 2021",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-december-2021/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — October 2021",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-october-2021/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Sustainability aspects specific to packaging must be exclusively governed by the PPWD",
+      "url": "https://www.europen-packaging.eu/news/sustainability-aspects-specific-to-packaging-must-be-exclusively-governed-by-the-ppwd/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — July 2021",
+      "url": "https://www.europen-packaging.eu/news/packaging-news-july-2021/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "The review of the Waste Framework Directive is around the corner",
+      "url": "https://www.europen-packaging.eu/news/the-review-of-the-waste-framework-directive-is-around-the-corner/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging News — April 2021",
+      "url": "https://www.europen-packaging.eu/news/newsletter/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging is an essential component of the EU food supply chain",
+      "url": "https://www.europen-packaging.eu/news/packaging-is-an-essential-component-of-the-eu-food-supply-chain/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "European Commission kicks-off work on its Sustainable Products Initiative. What’s at stake for the packaging sector?",
+      "url": "https://www.europen-packaging.eu/news/european-commission-kicks-off-work-on-its-sustainable-products-initiative-whats-at-stake-for-the-packaging-sector/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging value chain calls on EU to protect the Single Market to deliver on the Green Deal and circular economy",
+      "url": "https://www.europen-packaging.eu/news/packaging-value-chain-calls-on-eu-to-protect-the-single-market-to-deliver-on-the-green-deal-and-circular-economy/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Views of the Packaging Supply Chain on Fiscal Measures related to Packaging Materials and Applications",
+      "url": "https://www.europen-packaging.eu/news/views-of-the-packaging-supply-chain-on-fiscal-measures-related-to-packaging-materials-and-applications/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Packaging needs to be recognised by EU and national governments as an essential part of the continued flow of goods during the COVID-19 pandemic",
+      "url": "https://www.europen-packaging.eu/news/packaging-needs-to-be-recognised-by-eu-and-national-governments-as-an-essential-part-of-the-continued-flow-of-goods-during-the-covid-19-pandemic/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Adoption of the Single-Use Plastics Directive: EUROPEN calls for harmonised, consistent and proportionate implementation",
+      "url": "https://www.europen-packaging.eu/news/adoption-of-the-single-use-plastics-directive-europen-calls-for-harmonised-consistent-and-proportionate-implementation/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "single-use plastic"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Packaging Supply Chain joins alliance to ensure necessary framework conditions for circular plastics",
+      "url": "https://www.europen-packaging.eu/news/packaging-supply-chain-joins-alliance-to-ensure-necessary-framework-conditions-for-circular-plastics/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "73 packaging value chain organisations call on EU to safeguard the Single Market in Single-Use Plastics negotiations",
+      "url": "https://www.europen-packaging.eu/news/73-packaging-value-chain-organisations-call-on-eu-to-safeguard-the-single-market-in-single-use-plastics-negotiations/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "single-use plastic"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Single Use Plastics Directive- 73 national and EU industries call on EU to safeguard the Internal Market for packaging and packaged goods in view of trilogues",
+      "url": "https://www.europen-packaging.eu/news/single-use-plastics-directive-73-national-and-eu-industries-call-on-eu-to-safeguard-the-internal-market-for-packaging-and-packaged-goods-in-view-of-trilogues/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "EUROPEN – Statement on the ENVI vote on single-use plastics",
+      "url": "https://www.europen-packaging.eu/news/europen-statement-on-the-envi-vote-on-single-use-plastics/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "single-use plastic"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Packaging value chain coalition of 68 industry associations launches joint recommendations ahead of negotiations on the Single-Use Plastics proposal",
+      "url": "https://www.europen-packaging.eu/news/packaging-value-chain-coalition-of-68-industry-associations-launches-joint-recommendations-ahead-of-negotiations-on-the-single-use-plastics-proposal/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "single-use plastic"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Joint Statement from 68 Packaging Value Chain associations on the Single-Use Plastics Proposal",
+      "url": "https://www.europen-packaging.eu/news/joint-statement-from-68-packaging-value-chain-associations-on-the-single-use-plastics-proposal/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "single-use plastic"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Packaging industry leaders reaffirm commitment to packaging innovation for a circular economy at EUROPEN’s 25th anniversary",
+      "url": "https://www.europen-packaging.eu/news/packaging-industry-leaders-reaffirm-commitment-to-packaging-innovation-for-a-circular-economy-at-europens-25th-anniversary/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "EUROPEN welcomes EU Plastics Strategy’s call for strengthened and harmonised packaging waste management systems in Europe",
+      "url": "https://www.europen-packaging.eu/news/europen-welcomes-eu-plastics-strategys-call-for-strengthened-and-harmonised-packaging-waste-management-systems-in-europe/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "127 industry organisations urge the EU to safeguard the Internal Market for packaging and packaged goods",
+      "url": "https://www.europen-packaging.eu/news/127-industry-organisations-urge-the-eu-to-safeguard-the-internal-market-for-packaging-and-packaged-goods/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "129 National and EU industries call to safeguard the Internal Market for Packaging and Packaged Goods in the Circular Economy Package",
+      "url": "https://www.europen-packaging.eu/news/129-national-and-eu-industries-call-to-safeguard-the-internal-market-for-packaging-and-packaged-goods-in-the-circular-economy-package/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "36 packaging value chain industry associations launch joint recommendations ahead of negotiations on the EU CEP",
+      "url": "https://www.europen-packaging.eu/news/36-packaging-value-chain-industry-associations-launch-joint-recommendations-ahead-of-negotiations-on-the-eu-cep/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "36 packaging value chain industry associations launch joint recommendations ahead of inter-institutional negotiations on the EU CEP",
+      "url": "https://www.europen-packaging.eu/news/36-packaging-value-chain-industry-associations-launch-joint-recommendations-ahead-of-inter-institutional-negotiations-on-the-eu-cep/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "38 Packaging Value Chain Industry Associations launch joint recommendations for a resource-efficient Circular Economy",
+      "url": "https://www.europen-packaging.eu/news/38-packaging-value-chain-industry-associations-launch-joint-recommendations-for-a-resource-efficient-circular-economy/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Joint Statement from 38 Packaging Value Chain associations on the legislative review amending the WFD and PPWD",
+      "url": "https://www.europen-packaging.eu/news/joint-statement-from-38-packaging-value-chain-associations-on-the-legislative-review-amending-the-wfd-and-ppwd/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging supply chain calls for strengthened protection of the Internal Market in waste proposals",
+      "url": "https://www.europen-packaging.eu/news/packaging-supply-chain-calls-for-strengthened-protection-of-the-internal-market-in-waste-proposals/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "The Circular Economy Package: the distinct case of packaging & packaging waste within the wider EU waste policy framework",
+      "url": "https://www.europen-packaging.eu/news/the-circular-economy-package-the-distinct-case-of-packaging-packaging-waste-within-the-wider-eu-waste-policy-framework/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging supply chain welcomes the Circular Economy Package and presents its preliminary views on the WFD and PPWD legislative proposals",
+      "url": "https://www.europen-packaging.eu/news/packaging-supply-chain-welcomes-the-circular-economy-package-and-presents-its-preliminary-views-on-the-wfd-and-ppwd-legislative-proposals/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Packaging Value Chain Industries launch joint recommendations for a resource-efficient Circular Economy",
+      "url": "https://www.europen-packaging.eu/news/packaging-value-chain-industries-launch-joint-recommendations-for-a-resource-efficient-circular-economy/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Policy debate on Circular Economy and Packaging – The role of EPR",
+      "url": "https://www.europen-packaging.eu/news/policy-debate-on-circular-economy-and-packaging-the-role-of-epr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: Utvidet produsentansvar – kostnadsøkning."
+    },
+    {
+      "title": "Factsheet on Extended Producer Responsibility (EPR) for used packaging",
+      "url": "https://www.europen-packaging.eu/news/factsheet-on-extended-producer-responsibility-epr-for-used-packaging/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [
+        "Frukt og grønt"
+      ],
+      "score": 15,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for Frukt og grønt: Utvidet produsentansvar – kostnadsøkning."
+    },
+    {
+      "title": "Packaging supply chain calls on Commission to introduce new Circular Economy proposal without delay",
+      "url": "https://www.europen-packaging.eu/news/packaging-supply-chain-calls-on-commission-to-introduce-new-circular-economy-proposal-without-delay/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Joint Statement by Packaging Value Chain Industries on the EU Waste Package",
+      "url": "https://www.europen-packaging.eu/news/joint-statement-by-packaging-value-chain-industries-on-the-eu-waste-package/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging supply chain calls for circular economy that promotes sustainable growth and competitiveness",
+      "url": "https://www.europen-packaging.eu/news/packaging-supply-chain-calls-for-circular-economy-that-promotes-sustainable-growth-and-competitiveness/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Time to foster packaging’s contribution towards a resource efficient Europe",
+      "url": "https://www.europen-packaging.eu/news/time-to-foster-packagings-contribution-towards-a-resource-efficient-europe/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "NEW Packaging & Packaging Waste Statistics 1998-2011",
+      "url": "https://www.europen-packaging.eu/news/new-packaging-packaging-waste-statistics-1998-2011/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Realistic EU targets key to continued progress in packaging recycling and recovery,new EU data shows",
+      "url": "https://www.europen-packaging.eu/news/realistic-eu-targets-key-to-continued-progress-in-packaging-recycling-and-recoverynew-eu-data-shows/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "EUROPEN 20th Anniversary Event – Packaging and Sustainability",
+      "url": "https://www.europen-packaging.eu/news/europen-20th-anniversary-event-packaging-and-sustainability/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "EUROPEN – Fostering packaging’s contribution to delivering Resource Efficiency in Europe",
+      "url": "https://www.europen-packaging.eu/news/europen-fostering-packagings-contribution-to-delivering-resource-efficiency-in-europe/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging Waste Management is Increasingly Resource Efficient – EU Data Shows",
+      "url": "https://www.europen-packaging.eu/news/packaging-waste-management-is-increasingly-resource-efficient-eu-data-shows/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Packaging and the Environment – A New Guide to European Legislation",
+      "url": "https://www.europen-packaging.eu/news/packaging-and-the-environment-a-new-guide-to-european-legislation/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Global project on packaging and sustainability enters pilot phase",
+      "url": "https://www.europen-packaging.eu/news/global-project-on-packaging-and-sustainability-enters-pilot-phase/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "packaging regulation"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
       "title": "Flexible Packaging in Europe",
       "url": "https://ceflex.eu/flexible-packaging-in-europe/",
       "source": "CEFLEX",
@@ -520,6 +2349,23 @@
       ],
       "categories": [],
       "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "CEFLEX welcomes the first European Design for Recyclability standards for flexible plastic packaging",
+      "url": "https://ceflex.eu/ceflex-welcomes-the-first-european-design-for-recyclability-standards-for-flexible-plastic-packaging/",
+      "source": "CEFLEX",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "plastic packaging"
+      ],
+      "categories": [],
+      "score": 10,
       "accessible": true,
       "paywall": false,
       "impact": "Generell relevans for generelt emballasje."
@@ -729,130 +2575,67 @@
       "impact": "Generell relevans for generelt emballasje."
     },
     {
-      "title": "CEFLEX welcomes the first European Design for Recyclability standards for flexible plastic packaging",
-      "url": "https://ceflex.eu/ceflex-welcomes-the-first-european-design-for-recyclability-standards-for-flexible-plastic-packaging/",
+      "title": "Recycling Technologies in Focus: Unlocking the Potential of Supercritical CO₂ Purification",
+      "url": "https://ceflex.eu/recycling-technologies-in-focus-unlocking-the-potential-of-supercritical-co%e2%82%82-purification/",
       "source": "CEFLEX",
       "source_type": "Bransjeorganisasjon",
       "source_access": "åpen",
-      "date": "2026-04-15",
-      "summary": "CEFLEX welcomes the first European Design for Recyclability standards for flexible plastic packaging Apr 15, 2026 A major step towards EU-harmonised packaging design CEFLEX welcomes the publication of the European Design for Recycling standard series EN18120, developed by the European Committee for ",
+      "date": "",
+      "summary": "",
       "keywords": [
-        "plastic packaging",
-        "packaging waste",
+        "recyclable packaging"
+      ],
+      "categories": [
+        "Blomster"
+      ],
+      "score": 15,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for Blomster: SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "Packaging and Packaging Waste Regulation",
+      "url": "https://www.europen-packaging.eu/policy-area/packaging-and-packaging-waste-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2026-05-18",
+      "summary": "PPWR trådte i kraft 11. februar 2025 og erstatter det gamle direktivet. Forordningen innfører krav til resirkulerbarhet for all emballasje, med design-for-resirkulering-kriterier fra januar 2030 og resirkulerbarhet i stor skala fra januar 2035.",
+      "keywords": [
         "PPWR",
-        "recyclable packaging",
-        "packaging and packaging waste"
-      ],
-      "categories": [
-        "Drikke/juice"
-      ],
-      "score": 95,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Drikke/juice: Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje. SUP-direktivet – påvirker engangsemballasje."
-    },
-    {
-      "title": "Plastpelletsforordningen",
-      "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2024/jan/forebygging-tap-av-plastpellets/id3033110/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2026-04-10",
-      "summary": "EØS-notat\n| 10.04.2026 | EØS-notatbasen Sakstrinn Faktanotat Foreløpig posisjonsnotat Posisjonsnotat Gjennomføringsnotat Opprettet 02.01.2024 Spesialutvalg: Miljø Dato sist behandlet i spesialutvalg: 27.03.2026 Hovedansvarlig(e) departement(er): Klima- og miljødepartementet Vedlegg/protokoll i EØS-a",
-      "keywords": [
-        "emballasje"
-      ],
-      "categories": [
-        "Blomster",
-        "Drikke/juice",
-        "Frukt og grønt"
-      ],
-      "score": 65,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Blomster, Drikke/juice, Frukt og grønt: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Gjenbrukskrav – påvirker logistikk og design. Utvidet produsentansvar – kostnadsøkning."
-    },
-    {
-      "title": "Flere bedrifter vil kutte plastprodukter",
-      "url": "https://www.regjeringen.no/no/aktuelt/plastpartnerskap2/id3155944/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2026-04-10",
-      "summary": "Nyhet\n| Dato: 10.04.2026 | Klima- og miljødepartementet Drikkebegre og matbeholdere i engangsplast ender ofte opp som søppel på gater og torg og i naturen. Flere bedrifter slutter seg nå til arbeidet for å redusere bruken av engangsprodukter av plast. – Plastforsøpling og plastforurensning er et bla",
-      "keywords": [
-        "emballasje",
-        "engangsplast"
+        "recycled content",
+        "packaging and packaging waste",
+        "beverage packaging",
+        "packaging waste"
       ],
       "categories": [
         "Drikke/juice",
-        "Frukt og grønt"
+        "Frukt og grønt",
+        "Blomster"
       ],
-      "score": 70,
+      "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice, Frukt og grønt: SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Bedriften har konkrete tidsfrister å forholde seg til - design-for-resirkulering innen 2030 og full resirkulerbarhet i stor skala innen 2035. Dette krever omfattende redesign av hele produktporteføljen, fra MAP-pakninger og clamshells til juice-kartonger og blomsterpotter, med betydelige investeringer i FoU og ny produksjonsteknologi."
     },
     {
-      "title": "Produsenter av plastprodukter må betale for opprydding",
-      "url": "https://www.regjeringen.no/no/aktuelt/plastprodusenter-ma-betale/id3141266/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2025-12-03",
-      "summary": "Nyhet\n| Dato: 03.12.2025 | Klima- og miljødepartementet Opprydding av engangsplast som matemballasje, engangslokk, sigarettsneiper og våtservietter på offentlige plasser, koster norske kommuner titalls millioner kroner i året. Nå vil regjeringen at de som produserer og importerer denne typen produkt",
+      "title": "Poland’s draft bill on Packaging and Packaging Waste outlines the future implementation of a state-run model for packaging EPR",
+      "url": "https://www.europen-packaging.eu/news/polands-draft-bill-on-packaging-and-packaging-waste-outlines-the-future-implementation-of-a-state-run-model-for-packaging-epr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2025-09-03",
+      "summary": "Artikkelen beskriver Polens forslag til statseid EPR-modell for emballasje, som skaper bekymringer i verdikjeden på grunn av tunge administrative byrder og høye kostnader. Over 40 organisasjoner har oppfordret polske myndigheter til å revurdere forslaget.",
       "keywords": [
-        "emballasje",
-        "engangsplast"
+        "PPWR",
+        "packaging and packaging waste",
+        "packaging waste"
       ],
-      "categories": [
-        "Drikke/juice",
-        "Frukt og grønt"
-      ],
-      "score": 70,
+      "categories": [],
+      "score": 60,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice, Frukt og grønt: Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
-    },
-    {
-      "title": "Ingen plastavtale nå",
-      "url": "https://www.regjeringen.no/no/aktuelt/ingen-plastavtale-na/id3116009/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2025-08-15",
-      "summary": "Nyhet\n| Dato: 15.08.2025 | Klima- og miljødepartementet Etter to uker med intense forhandlinger i Sveits, klarte ikke verdens land å bli enige om en juridiske bindende avtale som kan stanse plastforurensing. – Vi er selvfølgelig svært skuffet. Plastforurensning er en trussel for både mennesker og mi",
-      "keywords": [
-        "emballasje",
-        "engangsplast"
-      ],
-      "categories": [
-        "Frukt og grønt"
-      ],
-      "score": 35,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Frukt og grønt: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
-    },
-    {
-      "title": "Vil forhandle fram en global plastavtale",
-      "url": "https://www.regjeringen.no/no/aktuelt/plastforhandlinger2/id3115436/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2025-08-07",
-      "summary": "Nyhet\n| Dato: 07.08.2025 | Klima- og miljødepartementet Forhandlere fra hele verden er samlet for å få til en global plastavtale i Genève i Sveits. Klima- og miljøminister Andreas Bjelland Eriksen deltar på avslutningen av forhandlingene neste uke. – Vi må få kontroll med plastforurensningen.  Det h",
-      "keywords": [
-        "emballasje",
-        "engangsplast"
-      ],
-      "categories": [
-        "Drikke/juice"
-      ],
-      "score": 50,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Drikke/juice: Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Hvis bedriften opererer i eller eksporterer til Polen, kan den statslige EPR-modellen skape betydelige administrative og økonomiske byrder. Dette kan påvirke konkurranseevnen for alle produktkategorier og kreve ekstra ressurser til rapportering og avgifter."
     },
     {
       "title": "Endringer i regelverk for emballasje",
@@ -874,70 +2657,27 @@
       "impact": "Relevant for Drikke/juice: Utvidet produsentansvar – kostnadsøkning."
     },
     {
-      "title": "PRESSEINFORMASJON: Akkreditering til plastforhandlingene stenger snart",
-      "url": "https://www.regjeringen.no/no/aktuelt/plastforhandlinger/id3109996/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2025-06-19",
-      "summary": "Nyhet\n| Dato: 19.06.2025 | Klima- og miljødepartementet Klima- og miljøminister Andreas Bjelland Eriksen reiser til de avsluttende plastforhandlingene i Geneve i august. Sist frist for presseakkreditering er 30. juni. – Plast er en av verdens raskest voksende miljøproblemer. Plastforurensning ødeleg",
-      "keywords": [
-        "emballasje",
-        "engangsplast"
-      ],
-      "categories": [
-        "Drikke/juice"
-      ],
-      "score": 50,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Drikke/juice: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
-    },
-    {
       "title": "Emballasjeforordningen",
       "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2023/feb/forslag-til-forordning-om-emballasje-og-emballsjeavfall/id2978356/",
       "source": "Regjeringen.no",
       "source_type": "Lovdata/Norge",
       "source_access": "åpen",
       "date": "2025-06-13",
-      "summary": "EØS-notat\n| 13.06.2025 | EØS-notatbasen Sakstrinn Faktanotat Foreløpig posisjonsnotat Posisjonsnotat Gjennomføringsnotat Opprettet 08.02.2023 Spesialutvalg: Miljø Dato sist behandlet i spesialutvalg: Hovedansvarlig(e) departement(er): Klima- og miljødepartementet Vedlegg/protokoll i EØS-avtalen: Ved",
+      "summary": "Dette er et EØS-notat som bekrefter at emballasjeforordningen er vedtatt og vil gjelde fra 18 måneder etter ikrafttredelse. Norge vil delta i ekspertgrupper for å utvikle underliggende rettsakter.",
       "keywords": [
-        "emballasjeforordning",
         "emballasje",
+        "emballasjeforordning",
         "plastemballasje"
       ],
       "categories": [
-        "Blomster",
         "Drikke/juice",
-        "Frukt og grønt"
+        "Frukt og grønt",
+        "Blomster"
       ],
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Blomster, Drikke/juice, Frukt og grønt: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
-    },
-    {
-      "title": "Recycling Technologies in Focus: Unlocking the Potential of Supercritical CO₂ Purification",
-      "url": "https://ceflex.eu/recycling-technologies-in-focus-unlocking-the-potential-of-supercritical-co%e2%82%82-purification/",
-      "source": "CEFLEX",
-      "source_type": "Bransjeorganisasjon",
-      "source_access": "åpen",
-      "date": "2025-04-01",
-      "summary": "Recycling Technologies in Focus: Unlocking the Potential of Supercritical CO₂ Purification Apr 1, 2025 Interview with Gilles Dennler, Chief Technical Officer at the French Industrial Technical Center for Plastics and Composites (IPC) Could supercritical CO₂ purification be the breakthrough technolog",
-      "keywords": [
-        "PPWR",
-        "packaging waste",
-        "recyclable packaging",
-        "packaging and packaging waste"
-      ],
-      "categories": [
-        "Blomster",
-        "Drikke/juice"
-      ],
-      "score": 100,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Blomster, Drikke/juice: Gjenbrukskrav – påvirker logistikk og design. PPWR – direkte innvirkning på all EU/EØS-emballasje. SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Bedriften må forberede seg på at PPWR-kravene vil gjelde også i Norge gjennom EØS-avtalen. Dette betyr at alle produktlinjer for frukt, grønnsaker, drikke og blomster må tilpasses de samme strenge EU-kravene. Tidsrammen på 18 måneder gir begrenset tid til omstilling."
     },
     {
       "title": "Mindre unødvendig emballasje, meir ombruk",
@@ -946,10 +2686,10 @@
       "source_type": "Lovdata/Norge",
       "source_access": "åpen",
       "date": "2024-11-29",
-      "summary": "Nyhet\n| Dato: 29.11.2024 | Klima- og miljødepartementet Dette innholdet er mer enn 1 år gammelt. Dei neste åra skal det bli mindre luft i pakkene du har handla på nettet, mindre plastpakka frukt og grønt og emballasjeavfallet skal bli enklare å materialgjenvinne. Når du bestiller mat for take-away, ",
+      "summary": "Norske myndigheter informerer om nye emballasjeregler som vil redusere unødvendig emballasje, spesielt mindre luft i netthandelspakker og mindre plastpakket frukt og grønt. Regelverket skal også gjøre emballasjeavfall enklere å materialgjenvinne og fremme ombruk.",
       "keywords": [
-        "emballasjeforordning",
-        "emballasje"
+        "emballasje",
+        "emballasjeforordning"
       ],
       "categories": [
         "Drikke/juice",
@@ -958,66 +2698,230 @@
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Generell relevans for Drikke/juice, Frukt og grønt."
+      "impact": "For frukt- og grøntemballasje må bedriften redusere plastbruken betydelig og finne alternative løsninger til tradisjonelle plastskåler og flow-wrap. Drikkeemballasje må optimaliseres for bedre materialgjenvinning. Blomsteremballasje må også tilpasses for å redusere unødvendig materiale og forbedre resirkulerbarhet."
     },
     {
-      "title": "Presseinformasjon: Akkreditering til siste møtet i plastforhandlingene (INC-5)",
-      "url": "https://www.regjeringen.no/no/aktuelt/akkreditering-til-siste-motet-i-plastforhandlingene-inc-5/id3066929/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2024-10-29",
-      "summary": "Pressemelding\n| Dato: 29.10.2024 | Utenriksdepartementet Dette innholdet er mer enn 1 år gammelt. Utviklingsminister Anne Beathe Tvinnereim reiser til avsluttende runde i de internasjonale plastforhandlingene i Sør-Korea i slutten av november. Frist for å søke presseakkreditering er 31. oktober. Utv",
+      "title": "Packaging and Packaging Waste Regulation (PPWR): What’s on the horizon?",
+      "url": "https://www.europen-packaging.eu/news/packaging-and-packaging-waste-regulation-ppwr-whats-on-the-horizon/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2024-07-08",
+      "summary": "Artikkelen gir oppdatering om PPWR-prosessen sommeren 2024, der EU-institusjoner hadde funnet en foreløpig enighet. Den endelige versjonen skulle stemmes over i det nyvalgte EU-parlamentet september-oktober 2024.",
       "keywords": [
-        "emballasje",
-        "engangsplast"
+        "PPWR",
+        "packaging and packaging waste",
+        "packaging waste"
       ],
       "categories": [],
-      "score": 20,
+      "score": 60,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for generelt emballasje: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Dette er prosessinformasjon som indikerer at PPWR-reglene nærmer seg endelig vedtak. Bedriften må intensivere forberedelsene til implementering av nye krav for all emballasje til frukt, grønnsaker, drikke og blomster, da regelverket snart vil tre i kraft."
     },
     {
-      "title": "Inngår plastpartnerskap med næringslivet",
-      "url": "https://www.regjeringen.no/no/aktuelt/inngar-plastpartnerskap-med-naringslivet/id3031748/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2024-04-02",
-      "summary": "Nyhet\n| Dato: 02.04.2024 | Klima- og miljødepartementet Dette innholdet er mer enn 2 år gammelt. Klima- og miljødepartement og en rekke næringslivsorganisasjoner går sammen for å redusere bruken av engangsprodukter av plast. Klima- og miljødepartementet går sammen med en rekke næringslivsorganisasjo",
+      "title": "Joint industry statement on references to “state-run producer responsibility organisations” in the PPWR",
+      "url": "https://www.europen-packaging.eu/news/joint-industry-statement-on-references-to-state-run-producer-responsibility-organisations-in-the-ppwr/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2024-01-24",
+      "summary": "News 24 Jan 2024 Joint industry statement on references to “state-run producer responsibility organisations” in the PPWR The undersigned organisations call on EU legislators to delete the references to ‘state-owned producer responsibility organisations’ in recital 97a, Article 39.7b and Article 42.6",
       "keywords": [
-        "emballasje",
-        "engangsplast"
+        "PPWR"
       ],
       "categories": [
-        "Drikke/juice",
         "Frukt og grønt"
-      ],
-      "score": 70,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Drikke/juice, Frukt og grønt: SUP-direktivet – påvirker engangsemballasje."
-    },
-    {
-      "title": "Invitasjon til pressen: Signerer avtale om plastpartnerskap med næringslivet",
-      "url": "https://www.regjeringen.no/no/aktuelt/signerer-avtale-om-plastpartnerskap-med-naringslivet/id3031686/",
-      "source": "Regjeringen.no",
-      "source_type": "Lovdata/Norge",
-      "source_access": "åpen",
-      "date": "2024-03-26",
-      "summary": "Nyhet\n| Dato: 26.03.2024 | Klima- og miljødepartementet Dette innholdet er mer enn 2 år gammelt. Klima- og miljødepartement og en rekke næringslivsorganisasjoner går sammen for å redusere bruken av engangsprodukter av plast. Klima- og miljøminister Andreas Bjelland Eriksen signerer avtalen med parte",
-      "keywords": [
-        "emballasje",
-        "engangsplast"
-      ],
-      "categories": [
-        "Drikke/juice"
       ],
       "score": 35,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Drikke/juice: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Relevant for Frukt og grønt: Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "The Packaging and Packaging Waste Regulation Negotiations Continue",
+      "url": "https://www.europen-packaging.eu/news/the-packaging-and-packaging-waste-regulation-negotiations-continue/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2023-10-06",
+      "summary": "Artikkelen oppdaterer om pågående forhandlinger om PPWR, med Europaparlamentets miljøkomité-avstemning utsatt til 24. oktober 2023. Plenum skulle stemme 20. november 2023.",
+      "keywords": [
+        "PPWR",
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [
+        "Drikke/juice"
+      ],
+      "score": 75,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Dette er primært prosessinformasjon som ikke direkte påvirker bedriftens operasjoner, men gir innsikt i tidslinjen for når endelige regler vil være klare. Bedriften kan bruke denne informasjonen til å planlegge implementeringstidspunkt for nye emballasjeløsninger."
+    },
+    {
+      "title": "News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive",
+      "url": "https://www.europen-packaging.eu/news/news-update-european-commission-proposal-for-the-revision-of-the-packaging-and-packaging-waste-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2022-11-30",
+      "summary": "Artikkelen beskriver overgangen fra Packaging and Packaging Waste Directive (PPWD) til en forordning (PPWR). Endringen fra direktiv til forordning øker potensialet for harmonisering på tvers av EU-medlemsland.",
+      "keywords": [
+        "recyclable packaging",
+        "PPWR",
+        "recycled content",
+        "single-use plastic",
+        "packaging and packaging waste"
+      ],
+      "categories": [
+        "Drikke/juice",
+        "Frukt og grønt",
+        "Blomster"
+      ],
+      "score": 100,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Overgangen til forordning betyr at kravene blir direkte gjeldende og like i alle EU-land, noe som gir bedriften forutsigbarhet for eksport til hele EU-markedet. Dette forenkler compliance for emballasje til frukt, grønnsaker, drikke og blomster som selges på tvers av landegrenser."
+    },
+    {
+      "title": "Packaging and Packaging Waste Directive: What’s new?",
+      "url": "https://www.europen-packaging.eu/news/packaging-and-packaging-waste-directive-whats-new/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2022-04-14",
+      "summary": "Artikkelen gir oppdatering på fremdriften i revisjonen av PPWD, inkludert konsekvensutredningsarbeid utført av konsulentfirmaet Eunomia. Publisering av lovforslaget var planlagt til juli 2022, men kunne bli utsatt til oktober.",
+      "keywords": [
+        "recycled content",
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [
+        "Drikke/juice"
+      ],
+      "score": 65,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Dette er hovedsakelig prosessinformasjon som gir bedriften innsikt i tidslinjen for regelverksutvikling. Informasjonen hjelper med planlegging av når nye krav kan forventes å tre i kraft for emballasje til frukt, grønnsaker, drikke og blomster."
+    },
+    {
+      "title": "One step closer to the revision of the Packaging and Packaging Waste Directive",
+      "url": "https://www.europen-packaging.eu/news/one-step-closer-to-the-revision-of-the-packaging-and-packaging-waste-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2021-10-07",
+      "summary": "Artikkelen bekrefter at Kommisjonens forslag til PPWD-revisjon er utsatt fra slutten av 2021 til våren 2022. Den beskriver også webinarer om sentrale inngrepområder som avfallsforebygging, resirkulerbarhet og gjenbruk.",
+      "keywords": [
+        "recycled content",
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 50,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Utsettelsen gir bedriften mer tid til å forberede seg, men skaper også usikkerhet om tidslinjen. Fokuset på avfallsforebygging, resirkulerbarhet og gjenbruk signaliserer at alle produktkategorier må redesignes for å møte disse kravene."
+    },
+    {
+      "title": "Review of the Packaging and Packaging Waste Directive, what’s new?",
+      "url": "https://www.europen-packaging.eu/news/review-of-the-packaging-and-packaging-waste-directive-whats-new/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2021-07-05",
+      "summary": "Artikkelen beskriver den stramme tidsplanen for revisjonen av PPWD og bekymringer om at hastverket kan føre til dårlige beslutninger. Emballasjeindustrien oppfordrer til tilstrekkelig tid for grundig konsekvensutredning.",
+      "keywords": [
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [
+        "Drikke/juice"
+      ],
+      "score": 55,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Den stramme tidsplanen kan resultere i uklare eller suboptimale regler, noe som skaper usikkerhet for bedriftens planlegging. Dette kan påvirke investeringsbeslutninger knyttet til nye emballasjeløsninger for alle produktkategorier."
+    },
+    {
+      "title": "Packaging value chain calls on the European Commission to dedicate appropriate time and resources to review of the Packaging and Packaging Waste Directive",
+      "url": "https://www.europen-packaging.eu/news/packaging-value-chain-calls-on-the-european-commission-to-dedicate-appropriate-time-and-resources-to-review-of-the-packaging-and-packaging-waste-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2021-04-16",
+      "summary": "EUROPEN og 59 andre bransjeorganisasjoner oppfordrer EU-kommisjonen til å dedikere tilstrekkelig tid og ressurser til revisjonen av PPWD. De understreker at ambisjøse mål må støttes av et fremtidsrettet regulatorisk rammeverk.",
+      "keywords": [
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 40,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Dette signaliserer at bransjen erkjenner behovet for omfattende endringer, men ønsker en grundig prosess. For bedriften betyr dette at endelige krav sannsynligvis vil være ambisiøse og kreve betydelige investeringer i ny teknologi og materialer for alle emballasjekategorier."
+    },
+    {
+      "title": "A proposal for a revised Packaging and Packaging Waste Directive by the end of the year?",
+      "url": "https://www.europen-packaging.eu/news/a-proposal-for-a-revised-packaging-and-packaging-waste-directive-by-the-end-of-the-year/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2021-04-05",
+      "summary": "Artikkelen diskuterer forventet revisjon av PPWD som en viktig milepæl for å øke sirkulariteten i EU-økonomien. Den understreker behovet for robust lovgivning som støtter investeringer i innovasjon.",
+      "keywords": [
+        "packaging and packaging waste",
+        "packaging waste",
+        "single-use plastic"
+      ],
+      "categories": [
+        "Frukt og grønt"
+      ],
+      "score": 75,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Bedriften må forberede seg på omfattende endringer som krever innovasjon og investeringer. For frukt- og grøntemballasje betyr dette utvikling av nye sirkulære løsninger, mens drikke- og blomsteremballasje må redesignes for bedre sirkularitet og gjenbruk."
+    },
+    {
+      "title": "Review of the Packaging and Packaging Waste Directive",
+      "url": "https://www.europen-packaging.eu/news/review-of-the-packaging-and-packaging-waste-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2020-07-29",
+      "summary": "News 29 Jul 2020 Review of the Packaging and Packaging Waste Directive July 2020 - EUROPEN feedback on the Inception Impact Assessment Following-up on the objectives of the European Green Deal, the European Commission has presented its initiative to review the Packaging and Packaging Waste Directive",
+      "keywords": [
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [],
+      "score": 40,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje. SUP-direktivet – påvirker engangsemballasje."
+    },
+    {
+      "title": "EUROPEN calls for clear EPR legal framework and strong Internal Market safeguard in Packaging and Packaging Waste Directive",
+      "url": "https://www.europen-packaging.eu/news/europen-calls-for-clear-epr-legal-framework-and-strong-internal-market-safeguard-in-packaging-and-packaging-waste-directive/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "2016-05-24",
+      "summary": "EUROPEN oppfordrer til et tydelig EPR-rammeverk (Extended Producer Responsibility) og sterke internmarkedssikkerhetstiltak i emballasjeregelverket. Organisasjonen understreker behovet for sammenlignbare rapporteringsmetodikker mellom medlemsland.",
+      "keywords": [
+        "packaging and packaging waste",
+        "packaging waste"
+      ],
+      "categories": [
+        "Drikke/juice",
+        "Frukt og grønt",
+        "Blomster"
+      ],
+      "score": 100,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Bedriften må forberede seg på utvidet produsentansvar, som kan innebære økte kostnader for håndtering av emballasjeavfall. Dette påvirker kostnadene for alle produktkategorier og krever investeringer i sporbarhet og rapporteringssystemer for emballasje til frukt, grønnsaker, drikke og blomster."
     }
   ]
 }
