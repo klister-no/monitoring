@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-24T07:50:00.184586",
-  "count": 144,
+  "generated": "2026-06-25T07:51:51.134494",
+  "count": 163,
   "daily_summary": "",
   "weekly_summary": "",
   "sources": {
@@ -44,7 +44,7 @@
       "access": "åpen",
       "description": "Norske høringer, forskrifter og politiske dokumenter – fritt tilgjengelig",
       "url": "https://www.regjeringen.no",
-      "article_count": 0
+      "article_count": 19
     },
     "Miljødirektoratet": {
       "type": "Lovdata/Norge",
@@ -103,11 +103,11 @@
       "date": "",
       "summary": "Cutting down packaging waste means cleaner streets and nature, less plastic in our seas, and fewer overflowing bins in our neighborhoods. It can save our precious resources, reduce the cost of managing waste, and reduce greenhouse gasses. Using less packaging is good for the planet, but also for our",
       "keywords": [
-        "PPWR",
-        "single-use plastic",
-        "packaging waste",
+        "packaging and packaging waste",
         "recycled content",
-        "packaging and packaging waste"
+        "packaging waste",
+        "plastic packaging",
+        "single-use plastic"
       ],
       "categories": [
         "Drikke/juice"
@@ -329,6 +329,295 @@
       "impact": "Relevant for generelt emballasje: SUP-direktivet – påvirker engangsemballasje."
     },
     {
+      "title": "Plastpelletsforordningen",
+      "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2024/jan/forebygging-tap-av-plastpellets/id3033110/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Flere bedrifter vil kutte plastprodukter",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastpartnerskap2/id3155944/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Miljøavtale om plastprodukter",
+      "url": "https://www.regjeringen.no/no/dokumenter/miljoavtale-om-plastprodukter/id2702585/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Produsenter av plastprodukter må betale for opprydding",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastprodusenter-ma-betale/id3141266/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Invitasjon til pressen: Signerer avtale om plastpartnerskap med næringslivet",
+      "url": "https://www.regjeringen.no/no/aktuelt/signerer-avtale-om-plastpartnerskap-med-naringslivet/id3031686/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Enighet om direktiv som skal redusere negative miljøeffekter fra plastprodukter",
+      "url": "https://www.regjeringen.no/no/dokumenter/enighet-om-direktiv-som-skal-redusere-negative-miljoeffekter-fra-plastprodukter/id2626241/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Ingen plastavtale nå",
+      "url": "https://www.regjeringen.no/no/aktuelt/ingen-plastavtale-na/id3116009/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Inngår plastpartnerskap med næringslivet",
+      "url": "https://www.regjeringen.no/no/aktuelt/inngar-plastpartnerskap-med-naringslivet/id3031748/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Presseinformasjon: Akkreditering til siste møtet i plastforhandlingene (INC-5)",
+      "url": "https://www.regjeringen.no/no/aktuelt/akkreditering-til-siste-motet-i-plastforhandlingene-inc-5/id3066929/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Vil forhandle fram en global plastavtale",
+      "url": "https://www.regjeringen.no/no/aktuelt/plastforhandlinger2/id3115436/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Meld. St. 45 (2016–2017) - Avfall som ressurs  – avfallspolitikk og sirkulær økonomi",
+      "url": "https://www.regjeringen.no/no/dokumenter/meld.-st.-45-20162017/id2558274/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "NOU 2002: 19 - Avfallsforebygging",
+      "url": "https://www.regjeringen.no/no/dokumenter/nou-2002-19/id145734/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Prop. 89 L (2015–2016) - Endringer i forurensningsloven (avfallsdefinisjoner m.m.)",
+      "url": "https://www.regjeringen.no/no/dokumenter/prop.-89-l-20152016/id2481157/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Prop. 72 LS (2021–2022) - Endringer i forurensningsloven  (betingelsene for avfallsfasens opphør)  og samtykke til godkjennelse av  EØS-komiteens beslutning nr. 318/2021  av 29. oktober 2021 om innlemmelse  i EØS-avtalen av direktiv (EU) 2018/851  om",
+      "url": "https://www.regjeringen.no/no/dokumenter/prop.-72-ls-20212022/id2906151/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Ot.prp. nr. 87 (2001-2002) - Om lov om endring i lov 13. mars 1981 nr. 6 om vern mot forurensninger og om avfall (forurensningsloven)",
+      "url": "https://www.regjeringen.no/no/dokumenter/otprp-nr-87-2001-2002-/id169578/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Strengere krav til kildesortering av avfall",
+      "url": "https://www.regjeringen.no/no/aktuelt/strengere-krav-til-kildesortering-av-avfall/id2917708/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
+      "title": "Strategi for trygg, sikker og forsvarlig håndtering av radioaktivt avfall i Norge",
+      "url": "https://www.regjeringen.no/no/dokumenter/strategi-for-trygg-sikker-og-forsvarlig-handtering-av-radioaktivt-avfall-i-norge/id3047759/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [],
+      "score": 0,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for generelt emballasje."
+    },
+    {
       "title": "PPWR Conformity Assessment Toolkit",
       "url": "https://ppwrcatoolkit-europen.eu/",
       "source": "EUROPEN",
@@ -338,8 +627,8 @@
       "summary": "About the Conformity Assessment Toolkit The Packaging and Packaging Waste Regulation (PPWR) will apply from 12 August 2026, introducing a mandatory conformity assessment procedure for packaging placed on the EU market. The PPWR defines the notion of “conformity assessment” in Article 3(65) and under",
       "keywords": [
         "packaging waste",
-        "PPWR",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "PPWR"
       ],
       "categories": [
         "Drikke/juice"
@@ -348,6 +637,23 @@
       "accessible": true,
       "paywall": false,
       "impact": "Relevant for Drikke/juice: Krav til resirkulert innhold. PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "PPWR Implementation Tracker",
+      "url": "https://www.ppwrtracker-europen.eu/",
+      "source": "EUROPEN",
+      "source_type": "Bransjeorganisasjon",
+      "source_access": "delvis åpen",
+      "date": "",
+      "summary": "",
+      "keywords": [
+        "PPWR"
+      ],
+      "categories": [],
+      "score": 20,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
     },
     {
       "title": "About Packaging",
@@ -407,18 +713,15 @@
       "source_type": "Bransjeorganisasjon",
       "source_access": "delvis åpen",
       "date": "",
-      "summary": "Unwrapping PPWR READ MORE Have a look at our #UnwrappingPPWR videos and event series READ MORE Discover the PPWR in a nutshell in your own language READ MORE Check out our PPWR Survival Guide & PPWR Guidebook EUROPEN continues to provide insights on the Packaging and Packaging Waste Regulation (PPWR",
+      "summary": "",
       "keywords": [
-        "recycled content",
-        "packaging waste",
-        "PPWR",
-        "packaging and packaging waste"
+        "PPWR"
       ],
       "categories": [],
-      "score": 70,
+      "score": 20,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for generelt emballasje: Krav til resirkulert innhold. PPWR – direkte innvirkning på all EU/EØS-emballasje."
+      "impact": "Relevant for generelt emballasje: PPWR – direkte innvirkning på all EU/EØS-emballasje."
     },
     {
       "title": "EUROPEN launches PPWR Implementation Tracker",
@@ -2318,11 +2621,11 @@
       "date": "2026-05-18",
       "summary": "Packaging and Packaging Waste Regulation At a glance The Packaging and Packaging Waste Regulation (PPWR) has officially entered into force on 11 February 2025, replacing the Packaging and Packaging Waste Directive (PPWD) as the centerpiece of EU legislation on packaging and packaging waste. The obje",
       "keywords": [
-        "beverage packaging",
-        "PPWR",
+        "packaging and packaging waste",
         "recycled content",
         "packaging waste",
-        "packaging and packaging waste"
+        "beverage packaging",
+        "PPWR"
       ],
       "categories": [
         "Blomster",
@@ -2335,28 +2638,6 @@
       "impact": "Relevant for Blomster, Drikke/juice, Frukt og grønt: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
     },
     {
-      "title": "PPWR Implementation Tracker",
-      "url": "https://www.ppwrtracker-europen.eu/",
-      "source": "EUROPEN",
-      "source_type": "Bransjeorganisasjon",
-      "source_access": "delvis åpen",
-      "date": "2026-05-13",
-      "summary": "About the PPWR Tracker The PPWR Implementation Tracker is a publicly available tool designed to track the development of all implementing and delegated acts foreseen under the Packaging and Packaging Waste Regulation (PPWR). As the PPWR relies on a large and complex body of secondary legislation to ",
-      "keywords": [
-        "packaging waste",
-        "PPWR",
-        "plastic packaging",
-        "packaging and packaging waste"
-      ],
-      "categories": [
-        "Drikke/juice"
-      ],
-      "score": 85,
-      "accessible": true,
-      "paywall": false,
-      "impact": "Relevant for Drikke/juice: PPWR – direkte innvirkning på all EU/EØS-emballasje."
-    },
-    {
       "title": "Poland’s draft bill on Packaging and Packaging Waste outlines the future implementation of a state-run model for packaging EPR",
       "url": "https://www.europen-packaging.eu/news/polands-draft-bill-on-packaging-and-packaging-waste-outlines-the-future-implementation-of-a-state-run-model-for-packaging-epr/",
       "source": "EUROPEN",
@@ -2366,14 +2647,54 @@
       "summary": "News 03 Sep 2025 Poland’s draft bill on Packaging and Packaging Waste outlines the future implementation of a state-run model for packaging EPR Currently under consultation at national level, the draft bill raises several concerns for the packaging value chain: Heavy administrative & financial burde",
       "keywords": [
         "packaging waste",
-        "PPWR",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "PPWR"
       ],
       "categories": [],
       "score": 60,
       "accessible": true,
       "paywall": false,
       "impact": "Relevant for generelt emballasje: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje."
+    },
+    {
+      "title": "Endringer i regelverk for emballasje",
+      "url": "https://www.regjeringen.no/no/aktuelt/endringer-i-regelverk-for-emballasje/id3111827/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "2025-06-25",
+      "summary": "Nyhet\n| Dato: 25.06.2025 | Klima- og miljødepartementet Dette innholdet er mer enn 1 år gammelt. Produsenter som setter emballasje på det norske markedet, har ansvar for å dekke kostnader til håndtering av emballasjen etter at den er brukt. Klima- og miljødepartementet har nå vedtatt endringer i reg",
+      "keywords": [
+        "emballasje"
+      ],
+      "categories": [
+        "Drikke/juice"
+      ],
+      "score": 35,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Relevant for Drikke/juice: Utvidet produsentansvar – kostnadsøkning."
+    },
+    {
+      "title": "Mindre unødvendig emballasje, meir ombruk",
+      "url": "https://www.regjeringen.no/no/aktuelt/emballasjedirektivet/id3076915/",
+      "source": "Regjeringen.no",
+      "source_type": "Lovdata/Norge",
+      "source_access": "åpen",
+      "date": "2024-11-29",
+      "summary": "Nyhet\n| Dato: 29.11.2024 | Klima- og miljødepartementet Dette innholdet er mer enn 1 år gammelt. Dei neste åra skal det bli mindre luft i pakkene du har handla på nettet, mindre plastpakka frukt og grønt og emballasjeavfallet skal bli enklare å materialgjenvinne. Når du bestiller mat for take-away, ",
+      "keywords": [
+        "emballasjeforordning",
+        "emballasje"
+      ],
+      "categories": [
+        "Drikke/juice",
+        "Frukt og grønt"
+      ],
+      "score": 100,
+      "accessible": true,
+      "paywall": false,
+      "impact": "Generell relevans for Drikke/juice, Frukt og grønt."
     },
     {
       "title": "Packaging and Packaging Waste Regulation (PPWR): What’s on the horizon?",
@@ -2385,8 +2706,8 @@
       "summary": "News 08 Jul 2024 Packaging and Packaging Waste Regulation (PPWR): What’s on the horizon? Dreaming of sun, pristine sea or majestic mountains? We are too! But bear with us for a last PPWR update before a well-deserved summer break. In April, we told you that EU Institutions had found a preliminary ag",
       "keywords": [
         "packaging waste",
-        "PPWR",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "PPWR"
       ],
       "categories": [],
       "score": 60,
@@ -2423,8 +2744,8 @@
       "summary": "News 06 Oct 2023 The Packaging and Packaging Waste Regulation Negotiations Continue After a quiet summer break, negotiations on the Packaging and Packaging Waste Regulation (PPWR) have resumed in full speed, notwithstanding the postponement of the European Parliament’s Environment Committee (ENVI) v",
       "keywords": [
         "packaging waste",
-        "PPWR",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "PPWR"
       ],
       "categories": [
         "Drikke/juice"
@@ -2443,11 +2764,11 @@
       "date": "2022-11-30",
       "summary": "News 30 Nov 2022 News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive On 30 November, the European Commission published the second part of its Circular Economy package introducing, amongst others, its proposal for the revision of the Packaging and",
       "keywords": [
-        "beverage packaging",
-        "PPWR",
-        "single-use plastic",
+        "packaging and packaging waste",
+        "compostable packaging",
+        "recycled content",
         "packaging waste",
-        "recycled content"
+        "plastic packaging"
       ],
       "categories": [
         "Blomster",
@@ -2468,9 +2789,9 @@
       "date": "2022-04-14",
       "summary": "News 14 Apr 2022 Packaging and Packaging Waste Directive: What’s new? Since our last update in December, the revision of the Packaging and Packaging Waste Directive (PPWD) has made some progress. Work by Eunomia, the consultancy firm supporting DG Environment, has continued in the first quarter of t",
       "keywords": [
-        "recycled content",
         "packaging waste",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "recycled content"
       ],
       "categories": [
         "Drikke/juice"
@@ -2489,9 +2810,9 @@
       "date": "2021-10-07",
       "summary": "News 07 Oct 2021 One step closer to the revision of the Packaging and Packaging Waste Directive When you last read our newsletter in July, the Commission was working in full speed on the revision of the Packaging and Packaging Waste Directive (PPWD) to be able to adopt its proposal by the end of 202",
       "keywords": [
-        "recycled content",
         "packaging waste",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "recycled content"
       ],
       "categories": [],
       "score": 50,
@@ -2547,8 +2868,8 @@
       "summary": "News 05 Apr 2021 A proposal for a revised Packaging and Packaging Waste Directive by the end of the year? The review of the Packaging and Packaging Waste Directive (PPWD) will be a major milestone this year. This revision represents a key opportunity to further scale up the circularity of the EU eco",
       "keywords": [
         "packaging waste",
-        "single-use plastic",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "single-use plastic"
       ],
       "categories": [
         "Frukt og grønt"
