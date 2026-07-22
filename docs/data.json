@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T06:35:41.086258",
+  "generated": "2026-07-22T06:36:47.505515",
   "count": 148,
   "daily_summary": "",
   "weekly_summary": "",
@@ -103,11 +103,11 @@
       "date": "",
       "summary": "Cutting down packaging waste means cleaner streets and nature, less plastic in our seas, and fewer overflowing bins in our neighborhoods. It can save our precious resources, reduce the cost of managing waste, and reduce greenhouse gasses. Using less packaging is good for the planet, but also for our",
       "keywords": [
-        "PPWR",
-        "packaging and packaging waste",
         "packaging waste",
-        "plastic packaging",
-        "single-use plastic"
+        "packaging and packaging waste",
+        "single-use plastic",
+        "PPWR",
+        "plastic packaging"
       ],
       "categories": [
         "Drikke/juice"
@@ -411,8 +411,8 @@
       "keywords": [
         "packaging and packaging waste",
         "packaging waste",
-        "PPWR",
-        "recycled content"
+        "recycled content",
+        "PPWR"
       ],
       "categories": [],
       "score": 70,
@@ -2388,21 +2388,21 @@
       "date": "2026-07-06",
       "summary": "Packaging and Packaging Waste Regulation At a glance The Packaging and Packaging Waste Regulation (PPWR) has officially entered into force on 11 February 2025, replacing the Packaging and Packaging Waste Directive (PPWD) as the centerpiece of EU legislation on packaging and packaging waste. The obje",
       "keywords": [
-        "PPWR",
-        "packaging and packaging waste",
         "packaging waste",
+        "packaging and packaging waste",
         "beverage packaging",
+        "PPWR",
         "recycled content"
       ],
       "categories": [
-        "Frukt og grønt",
         "Drikke/juice",
+        "Frukt og grønt",
         "Blomster"
       ],
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Drikke/juice, Blomster: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
+      "impact": "Relevant for Drikke/juice, Frukt og grønt, Blomster: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
     },
     {
       "title": "PPWR Implementation Tracker",
@@ -2415,8 +2415,8 @@
       "keywords": [
         "packaging and packaging waste",
         "packaging waste",
-        "PPWR",
-        "plastic packaging"
+        "plastic packaging",
+        "PPWR"
       ],
       "categories": [
         "Drikke/juice"
@@ -2513,21 +2513,21 @@
       "date": "2022-11-30",
       "summary": "News 30 Nov 2022 News update: European Commission Proposal for the Revision of the Packaging and Packaging Waste Directive On 30 November, the European Commission published the second part of its Circular Economy package introducing, amongst others, its proposal for the revision of the Packaging and",
       "keywords": [
-        "PPWR",
-        "packaging and packaging waste",
+        "compostable packaging",
         "packaging waste",
-        "beverage packaging",
-        "plastic packaging"
+        "packaging and packaging waste",
+        "single-use plastic",
+        "beverage packaging"
       ],
       "categories": [
-        "Frukt og grønt",
         "Drikke/juice",
+        "Frukt og grønt",
         "Blomster"
       ],
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Drikke/juice, Blomster: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
+      "impact": "Relevant for Drikke/juice, Frukt og grønt, Blomster: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design."
     },
     {
       "title": "Packaging and Packaging Waste Directive: What’s new?",
@@ -2659,14 +2659,14 @@
         "packaging waste"
       ],
       "categories": [
-        "Frukt og grønt",
         "Drikke/juice",
+        "Frukt og grønt",
         "Blomster"
       ],
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Drikke/juice, Blomster: Nye merkekrav. Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje."
+      "impact": "Relevant for Drikke/juice, Frukt og grønt, Blomster: Nye merkekrav. Utvidet produsentansvar – kostnadsøkning. PPWR – direkte innvirkning på all EU/EØS-emballasje."
     }
   ]
 }
