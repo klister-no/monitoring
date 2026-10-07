@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T11:09:58.463916",
+  "generated": "2026-10-07T10:58:53.087333",
   "count": 33,
   "daily_summary": "",
   "weekly_summary": "",
@@ -276,8 +276,8 @@
       "date": "",
       "summary": "Flexible packaging in Europe The European strategic high level initiatives The perception of flexible packaging – debunking some myths CEFLEX scope based on EU market End of Life challenges The European strategic high level initiatives Ellen MacArthur Foundation New Plastics Economy Plastics Pact Ne",
       "keywords": [
-        "recyclable packaging",
-        "packaging waste"
+        "packaging waste",
+        "recyclable packaging"
       ],
       "categories": [
         "Frukt og grønt",
@@ -365,8 +365,8 @@
       "date": "2026-07-09",
       "summary": "Assessing and accelerating flexible packaging circularity in Greece Jul 9, 2026 Assessing and accelerating flexible packaging circularity in Greece In Greece, June 2026, CEFLEX’s Mike Jefferson and Marius Tent spent three days with HERRCO, Greece’s producer responsibility organisation for packaging,",
       "keywords": [
-        "recyclable packaging",
-        "PPWR"
+        "PPWR",
+        "recyclable packaging"
       ],
       "categories": [
         "Frukt og grønt"
@@ -385,11 +385,11 @@
       "date": "2026-07-01",
       "summary": "Can flexible packaging be sorted, recycled and achieve EU targets in Romania? National six-month trial offers a different question Jul 1, 2026 RoFLEX is one of CEFLEX’s leading pilots in an implementation program already active in 15 Member States – catalysing action and analysing the technical, inf",
       "keywords": [
-        "packaging waste",
         "packaging and packaging waste",
-        "PPWR",
         "plastic packaging",
-        "recyclable packaging"
+        "recyclable packaging",
+        "PPWR",
+        "recycled content"
       ],
       "categories": [
         "Frukt og grønt",
@@ -409,10 +409,10 @@
       "date": "2026-06-30",
       "summary": "Overview Background More Previous Next Overview Single-use plastic (SUP) products are designed to be used just once, or for a brief moment, before being discarded. Despite such a short lifespan, their environmental and health impacts are far-reaching and severe. Because SUP items are significantly m",
       "keywords": [
-        "recycled content",
         "single-use plastic",
-        "packaging waste",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "recycled content",
+        "packaging waste"
       ],
       "categories": [
         "Frukt og grønt",
@@ -432,11 +432,11 @@
       "date": "2026-06-30",
       "summary": "Overview Background More Previous Next Overview Packaging uses large quantities of primary raw materials. Increasing quantities of packaging are generated in the EU while the levels of re-use, collection and recycling remain low. This is a significant barrier to achieving a low-carbon, circular and ",
       "keywords": [
-        "single-use plastic",
-        "packaging waste",
-        "PPWR",
         "packaging and packaging waste",
-        "recycled content"
+        "PPWR",
+        "single-use plastic",
+        "recycled content",
+        "packaging waste"
       ],
       "categories": [
         "Frukt og grønt",
@@ -456,17 +456,17 @@
       "date": "2026-06-23",
       "summary": "Transforming flexible packaging, together… FlexCircular initiative aims to match ambition and insights to infrastructure in the UK Jun 23, 2026 Accelerating progress for the entire value chain increasingly means acting nationally. At CEFLEX do this with a Europe-wide program of collaboration, instig",
       "keywords": [
-        "recyclable packaging",
-        "plastic packaging"
+        "plastic packaging",
+        "recyclable packaging"
       ],
       "categories": [
-        "Frukt og grønt",
-        "Blomster"
+        "Blomster",
+        "Frukt og grønt"
       ],
       "score": 55,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Blomster: Gjenbrukskrav – påvirker logistikk og design. Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
+      "impact": "Relevant for Blomster, Frukt og grønt: Gjenbrukskrav – påvirker logistikk og design. Utvidet produsentansvar – kostnadsøkning. SUP-direktivet – påvirker engangsemballasje."
     },
     {
       "title": "Unlocking recycled content at scale: from regulatory targets to functioning markets",
@@ -477,21 +477,21 @@
       "date": "2026-06-17",
       "summary": "Unlocking recycled content at scale: from regulatory targets to functioning markets Jun 17, 2026 A conversation with Fiona Durie, CEFLEX Advocacy Consultant What does the latest CEFLEX analysis tell us about the scale of demand needed to meet Packaging and Packaging Waste Regulation (PPWR) recycled ",
       "keywords": [
-        "packaging waste",
         "packaging and packaging waste",
-        "PPWR",
         "plastic packaging",
-        "recycled content"
+        "PPWR",
+        "recycled content",
+        "packaging waste"
       ],
       "categories": [
-        "Frukt og grønt",
         "Blomster",
+        "Frukt og grønt",
         "Drikke/juice"
       ],
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Blomster, Drikke/juice: Krav til resirkulert innhold. Nye merkekrav. Utvidet produsentansvar – kostnadsøkning."
+      "impact": "Relevant for Blomster, Frukt og grønt, Drikke/juice: Krav til resirkulert innhold. Nye merkekrav. Utvidet produsentansvar – kostnadsøkning."
     },
     {
       "title": "Market volatility highlights need for stronger recycled content markets, CEFLEX analysis shows",
@@ -502,9 +502,9 @@
       "date": "2026-06-17",
       "summary": "Market volatility highlights need for stronger recycled content markets, CEFLEX analysis shows Jun 17, 2026 Recent disruptions in global polymer markets, combined with a sharp rise in virgin plastic prices, have strengthened the price competitiveness of recycled material and driven increased demand.",
       "keywords": [
-        "plastic packaging",
+        "PPWR",
         "recycled content",
-        "PPWR"
+        "plastic packaging"
       ],
       "categories": [
         "Blomster",
@@ -524,21 +524,21 @@
       "date": "2026-06-17",
       "summary": "Understanding the Next Decade of End Markets for Flexible Packaging Derived PCR Jun 17, 2026 A conversation with James Marshall, CEFLEX End Markets Lead What is the main message from the report? The report looks at the secondary applications that will be needed if Europe is going to meet the Packagi",
       "keywords": [
-        "packaging waste",
         "packaging and packaging waste",
-        "PPWR",
         "plastic packaging",
-        "recyclable packaging"
+        "recyclable packaging",
+        "PPWR",
+        "recycled content"
       ],
       "categories": [
-        "Frukt og grønt",
         "Blomster",
+        "Frukt og grønt",
         "Drikke/juice"
       ],
       "score": 100,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Blomster, Drikke/juice: Krav til resirkulert innhold. Nye merkekrav. Utvidet produsentansvar – kostnadsøkning."
+      "impact": "Relevant for Blomster, Frukt og grønt, Drikke/juice: Krav til resirkulert innhold. Nye merkekrav. Utvidet produsentansvar – kostnadsøkning."
     },
     {
       "title": "CEFLEX welcomes the first European Design for Recyclability standards for flexible plastic packaging",
@@ -549,11 +549,11 @@
       "date": "2026-04-15",
       "summary": "CEFLEX welcomes the first European Design for Recyclability standards for flexible plastic packaging Apr 15, 2026 A major step towards EU-harmonised packaging design CEFLEX welcomes the publication of the European Design for Recycling standard series EN18120, developed by the European Committee for ",
       "keywords": [
-        "packaging waste",
         "packaging and packaging waste",
-        "PPWR",
         "plastic packaging",
-        "recyclable packaging"
+        "recyclable packaging",
+        "PPWR",
+        "packaging waste"
       ],
       "categories": [
         "Drikke/juice"
@@ -572,20 +572,20 @@
       "date": "2026-03-30",
       "summary": "Navigating legislation implementation for flexible packaging: ‘Mission Circular’ or ‘Mission Impossible’? Mar 30, 2026 Navigating legislation implementation for flexible packaging: ‘Mission Circular’ or ‘Mission Impossible’? If PPWR sets targets, it is the numerous pieces of implementing legislation",
       "keywords": [
+        "PPWR",
         "recycled content",
-        "recyclable packaging",
         "plastic packaging",
-        "PPWR"
+        "recyclable packaging"
       ],
       "categories": [
-        "Frukt og grønt",
         "Blomster",
+        "Frukt og grønt",
         "Drikke/juice"
       ],
       "score": 95,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Blomster, Drikke/juice: Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design. Nye merkekrav."
+      "impact": "Relevant for Blomster, Frukt og grønt, Drikke/juice: Krav til resirkulert innhold. Gjenbrukskrav – påvirker logistikk og design. Nye merkekrav."
     },
     {
       "title": "From informed alignment to operational scale. The critical next chapter for the flexible packaging value chain",
@@ -596,8 +596,8 @@
       "date": "2026-03-24",
       "summary": "From informed alignment to operational scale. The critical next chapter for the flexible packaging value chain Mar 24, 2026 In March 2026 we recognised Graham Houlder and formally passed the baton to a new leadership team of Arne Jost , Liz Morrish and Mike Jefferson. Graham was a driving force in b",
       "keywords": [
-        "recyclable packaging",
-        "recycled content"
+        "recycled content",
+        "recyclable packaging"
       ],
       "categories": [
         "Drikke/juice"
@@ -616,11 +616,11 @@
       "date": "2026-03-10",
       "summary": "Cutting down packaging waste means cleaner streets and nature, less plastic in our seas, and fewer overflowing bins in our neighborhoods. It can save our precious resources, reduce the cost of managing waste, and reduce greenhouse gasses. Using less packaging is good for the planet, but also for our",
       "keywords": [
-        "single-use plastic",
-        "packaging waste",
-        "PPWR",
         "packaging and packaging waste",
-        "plastic packaging"
+        "plastic packaging",
+        "PPWR",
+        "single-use plastic",
+        "recycled content"
       ],
       "categories": [
         "Drikke/juice"
@@ -639,8 +639,8 @@
       "date": "2026-02-27",
       "summary": "Business and Biodiversity The EU Business & Biodiversity Platform fosters dialogue on business–biodiversity links at the EU level.",
       "keywords": [
-        "packaging waste",
-        "packaging and packaging waste"
+        "packaging and packaging waste",
+        "packaging waste"
       ],
       "categories": [],
       "score": 40,
@@ -657,18 +657,18 @@
       "date": "2025-12-16",
       "summary": "Raising the Bar Together: Insights from Two Years of Collective Testing on Flexible Packaging Sortability and Recyclability Dec 16, 2025 Improving packaging design and circularity is a shared effort that drives better understanding and progress. A major multi-country testing program reflects that sp",
       "keywords": [
-        "recyclable packaging",
-        "PPWR"
+        "PPWR",
+        "recyclable packaging"
       ],
       "categories": [
-        "Frukt og grønt",
         "Blomster",
+        "Frukt og grønt",
         "Drikke/juice"
       ],
       "score": 80,
       "accessible": true,
       "paywall": false,
-      "impact": "Relevant for Frukt og grønt, Blomster, Drikke/juice: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Nye merkekrav. PPWR – direkte innvirkning på all EU/EØS-emballasje."
+      "impact": "Relevant for Blomster, Frukt og grønt, Drikke/juice: Mulige forbud/restriksjoner på nåværende emballasjeløsninger. Nye merkekrav. PPWR – direkte innvirkning på all EU/EØS-emballasje."
     },
     {
       "title": "Better by Design: Isabelle Jenny on Packaging That Meets the Moment – and What’s Coming Next with Legislation",
@@ -679,9 +679,9 @@
       "date": "2025-10-08",
       "summary": "Better by Design: Isabelle Jenny on Packaging That Meets the Moment – and What’s Coming Next with Legislation Oct 8, 2025 Over two years, 15 industry advisors worked closely with labs, academics and stakeholders to refine the Designing for a Circular Economy (D4ACE) guidelines. We sat down with a fe",
       "keywords": [
-        "recyclable packaging",
+        "PPWR",
         "recycled content",
-        "PPWR"
+        "recyclable packaging"
       ],
       "categories": [
         "Drikke/juice"
@@ -700,11 +700,11 @@
       "date": "2025-09-30",
       "summary": "Bridging complexity and compliance: your tools to flexible packaging design Sep 30, 2025 Over two years, 15 industry advisors worked closely with labs, academics and stakeholders to refine the Designing for a Circular Economy (D4ACE) guidelines. We sat down with a few of them to hear what stood out ",
       "keywords": [
-        "packaging waste",
         "packaging and packaging waste",
-        "PPWR",
         "recyclable packaging",
-        "recycled content"
+        "PPWR",
+        "recycled content",
+        "packaging waste"
       ],
       "categories": [
         "Frukt og grønt",
